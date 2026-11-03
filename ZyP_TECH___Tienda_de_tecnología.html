@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZyP TECH – Tecnología que se mueve contigo</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css?v=64">
+</head>
+<body>
+<div class="promo">Envío gratis desde <b>S/ 299</b> · 30% de descuento en compras superiores a <b>S/ 299</b></div>
+<header><div class="wrap nav">
+<a href="#inicio" class="logo" aria-label="ZyP TECH, inicio"><img class="logo-mark" src="logo.png" alt="Logo de ZyP TECH"></a>
+<nav id="nav"><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#categorias">Colecciones</a><a href="#tienda">Tienda</a><a href="#oferta">Ofertas</a><a href="#contacto">Contacto</a><a href="#mapa-sitio">Mapa del sitio</a></nav>
+<button class="icon" id="theme" aria-label="Cambiar tema">🌓</button>
+<button class="icon" id="accountBtn" aria-label="Iniciar sesión" title="Iniciar sesión">👤</button>
+<button class="icon" id="cartBtn" aria-label="Abrir carrito">🛒<span id="count">0</span></button>
+<button class="icon menu" id="menu" aria-label="Menú">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="wrap">
+<div class="hero-copy">
+<p class="hero-kicker">TECNOLOGÍA · DISEÑO · VIDA DIARIA</p>
+<h1>Tecnología que <em>se mueve</em> contigo</h1>
+<p>Celulares, laptops, audio y gaming con garantía oficial, precios claros y entrega rápida a todo el Perú.</p>
+<div class="cta"><a class="btn" href="#tienda">Ver productos</a><a class="btn ghost" href="#oferta">Ofertas de hoy</a></div>
+</div>
+</div>
+<a class="hero-showcase" id="heroShowcase" href="#tienda" aria-label="Ver producto destacado en la tienda">
+<img id="heroProductImage" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Producto destacado" decoding="async">
+</a>
+<div class="stage" aria-hidden="true">
+<img class="stage-photo" src="fondoinicio.jpg" alt="">
+</div>
+</section>
+
+<section class="about" id="nosotros"><div class="wrap about-grid">
+<div class="about-heading"><p class="section-kicker">SOBRE ZyP TECH</p><h2>Quiénes somos</h2></div>
+<div class="about-copy"><p>Somos una tienda de tecnología que busca hacer más fácil la elección de productos para trabajar, estudiar y disfrutar.</p><p>Ofrecemos celulares, computadoras, audio y accesorios con información clara, asesoría cercana y acompañamiento antes y después de tu compra.</p><a class="btn ghost" href="#contacto">Conoce nuestro servicio</a></div>
+<div class="about-values">
+<article class="about-value"><p class="section-kicker">NUESTRO PROPÓSITO</p><h3>Misión</h3><p>Acercar tecnología útil y confiable a nuestros clientes, ayudándolos a elegir con información clara, atención honesta y un servicio cercano.</p></article>
+<article class="about-value"><p class="section-kicker">HACIA DÓNDE VAMOS</p><h3>Visión</h3><p>Ser una tienda de tecnología reconocida por la confianza, la calidad de su atención y una experiencia de compra sencilla para cada cliente.</p></article>
+</div>
+</div></section>
+
+<section class="band services" id="servicios"><div class="wrap">
+<p class="section-kicker">SERVICIOS</p><h2>Comprar bien también es parte del diseño.</h2><p class="sub">Atención clara, entrega confiable y soporte real en cada paso.</p>
+<div class="feat">
+<div><h3>Envío en 24–72 h</h3><p>Lima en 24 horas y provincias en 72 horas.</p></div>
+<div><h3>Garantía oficial</h3><p>Hasta 24 meses según marca y producto.</p></div>
+<div><h3>Pagos flexibles</h3><p>Tarjeta, Yape, Plin, transferencia o cuotas.</p></div>
+<div><h3>Cambios en 30 días</h3><p>Si no te convence, lo cambiamos sin costo.</p></div>
+</div></div></section>
+
+<section id="categorias" class="compact"><div class="wrap">
+<p class="section-kicker">03 / COLECCIONES</p><h2>Explora nuestras colecciones</h2><p class="sub">Piezas para trabajar, crear y disfrutar cada día.</p>
+<div class="cats" id="cats"></div>
+</div></section>
+
+<section id="tienda" class="compact"><div class="wrap">
+<h2>La selección ZyP TECH</h2><p class="sub">Conoce las características de cada producto y elige la tecnología ideal para ti. Todos los precios incluyen IGV. Las licencias digitales están sujetas a disponibilidad, región y confirmación de precio.</p>
+<div class="tools">
+<input id="q" type="search" placeholder="Buscar producto…" aria-label="Buscar producto">
+<select id="cat" aria-label="Categoría"></select>
+<select id="sort" aria-label="Ordenar"><option value="">Ordenar</option><option value="a">Menor precio</option><option value="d">Mayor precio</option></select>
+</div>
+<div class="grid" id="grid"></div>
+<p id="empty" class="sub" hidden>No encontramos productos con esa búsqueda. Prueba otra palabra o cambia la categoría.</p>
+</div></section>
+
+<section id="oferta"><div class="wrap">
+<div class="deal">
+<div><h2>30% de descuento en tu compra</h2><p class="deal-lead">Se aplica automáticamente en compras superiores a S/ 299.</p></div>
+<div class="time"><div><b id="d">00</b><small>días</small></div><div><b id="h">00</b><small>horas</small></div><div><b id="m">00</b><small>min</small></div><div><b id="s">00</b><small>seg</small></div></div>
+</div></div></section>
+
+<section id="opiniones" class="compact"><div class="wrap">
+<h2>Lo que dicen nuestros clientes</h2><p class="sub">Más de 12,000 pedidos entregados.</p>
+<div class="rev">
+<blockquote>Mi laptop llegó al día siguiente y con factura. Muy buena atención por WhatsApp.<cite>Carla M. · Miraflores</cite></blockquote>
+<blockquote>Compré unos audífonos, no me gustaron y me los cambiaron sin problema.<cite>Jorge P. · Arequipa</cite></blockquote>
+<blockquote>Mejor precio que en otras tiendas y pude pagar en cuotas con mi tarjeta.<cite>Lucía R. · Trujillo</cite></blockquote>
+</div></div></section>
+<section id="comentarios-clientes" class="compact"><div class="wrap">
+<h2>Comentarios de clientes</h2><p class="sub">Comparte tu experiencia. Los comentarios nuevos aparecerán junto a las opiniones existentes.</p>
+<div id="customerCommentList" class="rev" aria-live="polite"></div>
+<p id="customerCommentsStatus" class="ok" role="status"></p>
+<form id="customerCommentForm" class="customer-comment-form" hidden>
+<label for="customerCommentInput">Tu comentario</label>
+<textarea id="customerCommentInput" name="comment" rows="4" minlength="3" maxlength="1000" placeholder="Cuéntanos cómo fue tu experiencia (máximo 1000 caracteres)" required></textarea>
+<p class="order-meta">Al publicar, se mostrará tu nombre de pila junto al comentario.</p>
+<button type="submit">Publicar comentario</button>
+</form>
+<div id="customerCommentLogin">
+<p>Inicia sesión con tu cuenta de cliente para publicar un comentario.</p>
+<button type="button" class="icon" id="customerCommentLoginButton">Iniciar sesión</button>
+</div>
+</div></section>
+
+<section id="faq" class="compact"><div class="wrap faq-wrap">
+<h2>Preguntas frecuentes</h2><p class="sub">Lo que más nos consultan.</p>
+<details><summary>¿Los productos son originales?</summary><p>Sí. Todos son nuevos, sellados y con garantía del fabricante.</p></details>
+<details><summary>¿Hacen envíos a provincias?</summary><p>Sí, a todo el Perú con seguimiento del pedido. Es gratis desde S/ 299.</p></details>
+<details><summary>¿Emiten boleta o factura?</summary><p>Sí, elige el comprobante al finalizar tu compra.</p></details>
+<details><summary>¿Cómo uso la garantía?</summary><p>Escríbenos con tu número de pedido y coordinamos el recojo o la revisión.</p></details>
+<details><summary>¿Cómo recibo una licencia digital?</summary><p>El pedido queda pendiente hasta revisar el comprobante. La disponibilidad, región de activación y entrega de la licencia deben confirmarse con la tienda antes de comprar.</p></details>
+</div></section>
+
+<section class="band" id="contacto"><div class="wrap two">
+<div>
+<h2>Escríbenos</h2><p class="sub">Te respondemos en menos de 2 horas, de lunes a sábado.</p>
+<a class="wa-phone" href="https://wa.me/51921203723?text=Hola%2C%20quisiera%20consultar%20sobre%20sus%20productos" target="_blank" rel="noopener noreferrer">+51 921 203 723</a><br>✉️ hola@zyptech.pe<br>🕘 Lun–Sáb 9:00–19:00</p>
+<a class="btn whatsapp-link" href="https://wa.me/51921203723?text=Hola%2C%20quisiera%20consultar%20sobre%20sus%20productos" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">💬</span> Chatear por WhatsApp</a>
+<h3 class="news-title">Recibe ofertas por correo</h3>
+<form class="news" id="news"><input type="email" required placeholder="tu@correo.com" aria-label="Correo"><button>Suscribirme</button></form>
+<div class="ok" id="nok"></div>
+</div>
+<form id="contact">
+<input required placeholder="Tu nombre" aria-label="Nombre">
+<input type="email" required placeholder="Tu correo" aria-label="Correo">
+<textarea rows="4" required placeholder="¿En qué te ayudamos?" aria-label="Mensaje"></textarea>
+<button>Enviar mensaje</button>
+<div class="ok" id="cok"></div>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="fg">
+<div><div class="logo footer-logo"><img class="logo-mark" src="logo.png" alt="Logo de ZyP TECH"></div><p class="footer-summary">Tecnología original, precios claros y soporte de verdad.</p></div>
+<div><h3>Tienda</h3><a href="#tienda">Celulares</a><a href="#tienda">Laptops</a><a href="#tienda">Audio</a><a href="#tienda">Gaming</a><a href="#tienda">Software</a></div>
+<div><h3>Ayuda</h3><a href="#faq">Preguntas frecuentes</a><a href="#faq">Garantía</a><a href="#faq">Envíos</a><a href="#contacto">Contacto</a></div>
+<div id="mapa-sitio"><h3>Mapa del sitio</h3><a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#categorias">Colecciones</a><a href="#tienda">Tienda</a><a href="#oferta">Ofertas</a><a href="#opiniones">Opiniones</a><a href="#faq">Preguntas frecuentes</a><a href="#contacto">Contacto</a></div>
+<div><h3>Síguenos</h3><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a><a href="https://wa.me/51921203723?text=Hola%2C%20quisiera%20consultar%20sobre%20sus%20productos" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
+</div>
+<div class="copy">© 2026 ZyP TECH S.A.C. Todos los derechos reservados · Términos · Privacidad · Libro de reclamaciones</div>
+</div></footer>
+
+<aside id="drawer" aria-label="Carrito">
+<div class="drawer-head"><h2 class="drawer-title">Tu carrito</h2><button class="icon" id="close" aria-label="Cerrar">✕</button></div>
+<div id="items"></div>
+<div id="cartPricing" class="cart-pricing" aria-live="polite"></div>
+<div class="tot"><span>Total</span><span id="total">S/ 0</span></div>
+<button id="buy">Finalizar compra</button>
+</aside>
+<dialog id="checkoutDialog" aria-labelledby="checkoutTitle">
+<h2 id="checkoutTitle">Datos de entrega</h2>
+<p class="sub checkout-intro">Completa tus datos, realiza el pago y adjunta el comprobante. La validación del pago es manual.</p>
+<div id="checkoutSummary" aria-live="polite">
+<div><span>Subtotal</span><strong id="checkoutSubtotal"></strong></div>
+<div id="checkoutDiscountLine" hidden><span>Descuento 30%</span><strong id="checkoutDiscount"></strong></div>
+<div><span>Envío</span><strong id="checkoutShipping"></strong></div>
+<div class="checkout-total"><span>Total</span><strong id="checkoutTotal"></strong></div>
+</div>
+<form id="checkoutForm">
+<div id="checkoutDetails" class="payment-step">
+<label>Teléfono<input name="phone" type="tel" autocomplete="tel" required></label>
+<label>Dirección de entrega<input name="address" autocomplete="street-address" required></label>
+<label>Departamento<select id="checkoutDepartment" name="department" required><option value="">Selecciona un departamento</option></select></label>
+<label>Provincia<select id="checkoutProvince" name="province" required disabled><option value="">Selecciona una provincia</option></select></label>
+<label>Distrito<select id="checkoutDistrict" name="district" required disabled><option value="">Selecciona un distrito</option></select></label>
+<p id="deliveryMethodNote" class="order-meta">Elige tu departamento, provincia y distrito para asignar el transportista.</p>
+<label>Método de pago<select name="payment" required><option value="">Selecciona un método</option><option value="yape">Yape</option><option value="plin">Plin</option><option value="transfer">Transferencia bancaria</option></select></label>
+<p id="checkoutMessage" class="ok" role="alert"></p>
+<div class="checkout-actions"><button class="icon" type="button" id="cancelCheckout">Cancelar</button><button type="button" id="nextPayment">Siguiente</button></div>
+</div>
+<div id="paymentStep" class="payment-step" hidden>
+<h3 id="paymentTitle">Realiza tu pago</h3>
+<p id="paymentHelp" class="order-meta"></p>
+<div id="transferInstructions" class="payment-info" hidden>
+<strong>BCP · Cuenta en soles</strong>
+<div class="bank-detail"><span>Número de cuenta</span><strong>19103444320010</strong></div>
+<div class="bank-detail"><span>CCI</span><strong>00219110344432001058</strong></div>
+</div>
+<div id="qrInstructions" class="payment-info" hidden><img id="paymentQr" class="payment-qr" alt="QR de pago"><p id="qrHelp" class="order-meta">Escanea el QR con la aplicación seleccionada.</p></div>
+<p id="qrUnavailable" class="payment-warning" role="alert" hidden></p>
+<div id="receiptSection">
+<label>Captura del comprobante (JPG, PNG o WebP, hasta 5 MB)<input name="receipt" type="file" accept="image/jpeg,image/png,image/webp" required></label>
+</div>
+<div class="checkout-actions"><button class="icon" type="button" id="backPayment">Volver</button><button type="submit" id="submitOrder">Finalizar pedido</button></div>
+</div>
+</form>
+</dialog>
+<dialog id="paymentSuccessDialog" class="payment-success-dialog" aria-labelledby="paymentSuccessTitle">
+<div class="success-check" aria-hidden="true"><span class="success-checkmark"></span></div>
+<h2 id="paymentSuccessTitle">Pago enviado correctamente</h2>
+<p id="paymentSuccessMessage">Recibimos tu comprobante. El pago queda pendiente de revisión manual.</p>
+<button type="button" id="closePaymentSuccess">Continuar</button>
+</dialog>
+<dialog id="orderConfirmationDialog" aria-labelledby="orderConfirmationTitle">
+<div class="account-tools"><h2 id="orderConfirmationTitle">Resumen de tu pedido</h2><button type="button" class="icon" id="closeOrderConfirmation" aria-label="Cerrar resumen">✕</button></div>
+<p class="sub order-confirmation-intro">Revisa los datos del cliente, los productos y el pago registrado.</p>
+<div id="orderConfirmationContent"></div>
+<div class="checkout-actions order-confirmation-actions"><button type="button" class="icon" id="closeOrderConfirmationFooter">Cerrar</button><button type="button" class="icon" id="printOrderConfirmation">Imprimir</button><button type="button" id="downloadOrderConfirmationPdf">Descargar PDF</button></div>
+</dialog>
+<dialog id="accountDialog" aria-labelledby="accountTitle">
+<div class="account-tools"><h2 id="accountTitle">Tu cuenta</h2><button class="icon" type="button" id="closeAccount" aria-label="Cerrar">✕</button></div>
+<div id="authView">
+<h3 id="authFormTitle">Iniciar sesión</h3>
+<form id="loginForm">
+<label>Correo electrónico<input name="email" type="email" autocomplete="email" required></label>
+<label>Contraseña<input name="password" type="password" autocomplete="current-password" required></label>
+<button id="loginSubmit" type="submit">Ingresar</button>
+<button id="openRegisterForm" class="auth-switch" type="button">Registrarse</button>
+</form>
+<form id="registerForm" hidden>
+<label>Nombre completo<input name="name" autocomplete="name" minlength="2" maxlength="100" required></label>
+<label>Correo electrónico<input name="email" type="email" autocomplete="email" required></label>
+<label>Contraseña (mínimo 10 caracteres)<input name="password" type="password" autocomplete="new-password" minlength="10" required></label>
+<button type="submit">Crear cuenta</button>
+<button id="backToLogin" class="auth-switch" type="button">Ya tengo una cuenta · Ingresar</button>
+</form>
+</div>
+<p id="authMessage" class="ok" role="status"></p>
+</div>
+<div id="accountView" hidden>
+<p id="accountWelcome"></p>
+<div id="customerPanel" class="account-panel" hidden>
+<section class="account-receipts" aria-labelledby="customerReceiptsTitle"><h3 id="customerReceiptsTitle">Comprobantes de pago</h3><p class="order-meta">Consulta y descarga las imágenes de pago que adjuntaste a tus pedidos.</p><div id="customerReceipts"></div></section>
+<div class="account-tools"><h3>Mis pedidos</h3><button type="button" class="icon" id="refreshCustomerOrders">Actualizar seguimiento</button></div><p class="order-meta">Los cambios de estado registrados por la tienda se actualizan automáticamente cada 15 segundos mientras esta ventana permanezca abierta.</p><div id="customerOrders"></div>
+</div>
+<div id="adminPanel" class="account-panel" hidden>
+<div class="admin-menu" role="navigation" aria-label="Menú de administración">
+<button type="button" class="selected" data-admin-view="dashboard">Dashboard</button>
+<button type="button" class="icon" data-admin-view="orders">Ver pedidos</button>
+<button type="button" class="icon" data-admin-view="products">Productos</button>
+</div>
+<section id="adminDashboardView">
+<h3>Resumen de ventas</h3>
+<p class="order-meta">Las ventas contabilizan solo pedidos aprobados. Los pedidos cancelados y rechazados se muestran por separado.</p>
+<div id="adminDashboardMetrics" class="admin-dashboard-metrics"></div>
+<section class="admin-order-section admin-sales-chart-section">
+<h3>Ingresos y unidades vendidas · últimos 6 meses</h3>
+<p class="order-meta">Solo incluye pedidos con pago aprobado. Los ingresos corresponden al total cobrado, después de descuentos.</p>
+<div id="adminSalesChart" class="admin-sales-chart"></div>
+<div class="admin-sales-chart-legend"><span><i class="admin-sales-legend-income"></i>Ingresos cobrados (S/)</span><span><i class="admin-sales-legend-units"></i>Unidades vendidas</span></div>
+</section>
+<div class="admin-dashboard-analytics">
+<section class="admin-order-section">
+<h3>Productos más vendidos</h3>
+<div id="adminTopProducts"></div>
+</section>
+<section class="admin-order-section admin-status-chart-section">
+<h3>Estado de los pedidos</h3>
+<p class="order-meta">Distribución de pedidos por estado.</p>
+<div id="adminOrderChart" class="admin-order-chart" role="img" aria-label="Distribución de pedidos"></div>
+<div id="adminOrderChartLegend" class="admin-order-chart-legend"></div>
+</section>
+</div>
+<div class="admin-dashboard-orders">
+<section class="admin-order-section">
+<h3>Pedidos cancelados</h3>
+<div id="adminDashboardCancelled"></div>
+</section>
+<section class="admin-order-section">
+<h3>Pedidos rechazados</h3>
+<div id="adminDashboardRejected"></div>
+</section>
+</div>
+</section>
+<section id="adminOrdersView">
+<div class="admin-order-section"><h3>Pedidos no pagados</h3><div id="adminUnpaid"></div></div>
+<div class="admin-order-section"><h3>Pedidos cancelados</h3><div id="adminCancelled"></div></div>
+<div class="admin-order-section account-receipts"><h3>Comprobantes de pago</h3><p class="order-meta">Imágenes enviadas por los clientes. Solo administración y el dueño del pedido pueden verlas.</p><div id="adminReceipts"></div></div>
+<h3>Todos los pedidos por cliente</h3>
+<p class="sub">Revisa comprobantes y estados de cada pedido.</p>
+<div id="adminCustomers"></div>
+</section>
+<section id="adminProductsView" hidden>
+<h3>Administrar productos</h3>
+<p class="order-meta">Modifica datos, características, precio, stock e imagen de los productos, o configura una oferta. El stock se reserva al registrar un pedido y se devuelve si se rechaza o cancela. También puedes subir productos nuevos.</p>
+<div id="adminProductList" class="admin-product-list"></div>
+<h3>Subir un nuevo producto</h3>
+<form id="newProductForm" class="admin-product-form">
+<label>Nombre<input name="name" maxlength="200" required></label>
+<label>Categoría<select name="category" required><option value="">Selecciona una categoría</option><option>Celulares</option><option>Laptops</option><option>Audio</option><option>Wearables</option><option>Gaming</option><option>Accesorios</option><option>Software</option></select></label>
+<label>Precio (S/)<input name="price" type="number" min="0.01" max="99999999.99" step="0.01" required></label>
+<label>Stock inicial<input name="stock" type="number" min="0" max="1000000" step="1" value="10" required></label>
+<label>Descripción breve<input name="description" maxlength="255" required></label>
+<label>Características (una por línea)<textarea name="features" rows="5" maxlength="5000" required></textarea></label>
+<label>Video de YouTube<input name="videoUrl" type="url" placeholder="https://www.youtube.com/watch?v=..." required></label>
+<label>Precio de oferta (S/, opcional)<input name="offerPrice" type="number" min="0.01" max="99999999.99" step="0.01"></label>
+<label>Etiqueta de oferta (opcional)<input name="offerLabel" maxlength="40" placeholder="Oferta, Liquidación..."></label>
+<label>Imagen del producto (JPG, PNG o WebP; máximo 5 MB)<input name="image" type="file" accept="image/jpeg,image/png,image/webp" required></label>
+<p id="newProductMessage" class="ok" role="status"></p>
+<button type="submit">Subir producto</button>
+</form>
+</section>
+</div>
+<div class="checkout-actions"><button class="icon" type="button" id="logoutBtn">Cerrar sesión</button></div>
+</div>
+</dialog>
+<dialog id="productDetailDialog" class="product-detail-dialog" aria-labelledby="productDetailTitle">
+<div class="product-detail-header"><p class="section-kicker">DETALLES DEL PRODUCTO</p><button type="button" class="icon" id="closeProductDetail" aria-label="Cerrar detalles">✕</button></div>
+<div class="product-detail-content">
+<div id="productDetailGallery" class="product-detail-gallery"></div>
+<div class="product-detail-copy">
+<p id="productDetailCategory" class="section-kicker"></p>
+<h2 id="productDetailTitle"></h2>
+<p id="productDetailDescription" class="product-summary"></p>
+<div id="productDetailPrice" class="price"></div>
+<p id="productDetailStock" class="product-stock"></p>
+<h3>Características</h3>
+<ul id="productDetailFeatures"></ul>
+<button type="button" id="productDetailAction"></button>
+</div>
+</div>
+<section id="productDetailVideo" class="product-detail-video" hidden>
+<h3>Video del producto</h3>
+<button type="button" id="productVideoPreview" class="product-video-preview" aria-label="Reproducir video del producto"></button>
+<div id="productVideoPlayer" class="product-video-player" hidden></div>
+</section>
+</dialog>
+<div class="floating-actions" aria-label="Accesos rápidos">
+<button type="button" class="float-action float-chat" id="openHelpChat" aria-label="Abrir chat de ayuda" aria-controls="helpChat" aria-expanded="false" title="Chat de ayuda"><img src="logo.png" alt="" aria-hidden="true"></button>
+<a class="float-action float-support" href="#contacto" aria-label="Ir al soporte" title="Soporte"><span aria-hidden="true">🎧</span></a>
+<a class="float-action float-whatsapp" href="https://wa.me/51921203723?text=Hola%2C%20quisiera%20consultar%20sobre%20sus%20productos" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp" title="WhatsApp"><svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.768.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.875 1.213 3.074 2.095 3.2 5.076 4.487c.709.306 1.262.489 1.693.626.711.226 1.358.194 1.87.118.57-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.441-9.886 9.894-9.886 2.64.001 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.892 6.993c-.003 5.45-4.443 9.887-9.891 9.887M12.05 0C5.495 0 .16 5.334.157 11.892c0 2.096.548 4.142 1.588 5.946L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.334 11.893-11.893a11.82 11.82 0 0 0-3.49-8.413A11.83 11.83 0 0 0 12.05 0"/></svg></a>
+</div>
+<section id="helpChat" class="help-chat" aria-label="Chat de ayuda" hidden>
+<header class="help-chat-header"><div><strong>Asistente ZyP TECH</strong><span>Ayuda rápida de la tienda</span></div><button type="button" class="icon" id="closeHelpChat" aria-label="Cerrar chat">✕</button></header>
+<div id="helpChatMessages" class="help-chat-messages" role="log" aria-live="polite" aria-relevant="additions">
+<p class="chat-message bot-message">¡Hola! Puedo ayudarte con pagos, envíos, pedidos, garantía y productos. ¿Qué necesitas saber?</p>
+<div class="chat-suggestions" id="helpChatSuggestions"><button type="button" class="icon" data-chat-question="¿Qué métodos de pago aceptan?">Métodos de pago</button><button type="button" class="icon" data-chat-question="¿Cómo puedo ver mi pedido?">Ver mi pedido</button><button type="button" class="icon" data-chat-question="¿Cuánto demora el envío?">Envíos</button></div>
+</div>
+<form id="helpChatForm" class="help-chat-form"><label class="visually-hidden" for="helpChatInput">Escribe tu pregunta</label><input id="helpChatInput" name="message" maxlength="300" autocomplete="off" placeholder="Escribe tu pregunta…" required><button type="submit">Enviar</button></form>
+<a class="help-chat-contact" href="https://wa.me/51921203723?text=Hola%2C%20necesito%20ayuda%20con%20la%20tienda" target="_blank" rel="noopener noreferrer">¿Necesitas atención personal? Escríbenos por WhatsApp</a>
+</section>
+<div id="toast" role="status"><span class="toast-check" aria-hidden="true"></span><span id="toastMessage"></span></div>
+
+<dialog id="authSuccessDialog" class="payment-success-dialog" aria-labelledby="authSuccessTitle">
+<div class="success-check" aria-hidden="true"><span class="success-checkmark"></span></div>
+<h2 id="authSuccessTitle">Ingreso exitoso</h2>
+<p id="authSuccessMessage">Cuenta ingresada correctamente.</p>
+<button type="button" id="continueAfterAuth">Continuar</button>
+</dialog>
+
+<script>
+const P=[
+{n:"Apple iPhone 16e · 128 GB",c:"Celulares",e:"📱",image:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=85",p:2199,o:0,t:"",d:"Pantalla OLED 6.1'' · chip A18 · cámara 48 MP",f:["Pantalla Super Retina XDR OLED de 6.1 pulgadas","Chip Apple A18 para aplicaciones, juegos y multitarea","Cámara principal Fusion de 48 MP con estabilización óptica","Almacenamiento interno de 128 GB","Face ID para desbloqueo y autenticación","Puerto USB-C para carga y conexión","Conectividad 5G y Wi-Fi, según disponibilidad de red"]},
+{n:"Samsung Galaxy A56 5G · 256 GB",c:"Celulares",e:"📱",image:"https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=85",p:1519,o:0,t:"",d:"Super AMOLED 6.7'' · 8 GB RAM · cámara 50 MP",f:["Pantalla Super AMOLED de 6.7 pulgadas con resolución Full HD+","Tasa de actualización de hasta 120 Hz","Procesador Exynos 1580 con conectividad 5G","Memoria RAM de 8 GB y almacenamiento de 256 GB","Cámara principal de 50 MP con estabilización óptica","Batería de 5,000 mAh con carga rápida de hasta 45 W","Resistencia al agua y al polvo con certificación IP67"]},
+{n:"ASUS Vivobook Go 15 E1504FA",c:"Laptops",e:"💻",image:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=85",p:1599,o:0,t:"",d:"Ryzen 5 7520U · 8 GB RAM · SSD 512 GB",f:["Pantalla de 15.6 pulgadas con resolución Full HD","Procesador AMD Ryzen 5 7520U de 4 núcleos y 8 hilos","Gráficos integrados AMD Radeon 610M","Memoria RAM de 8 GB LPDDR5","Unidad SSD de 512 GB para iniciar y abrir archivos rápidamente","Diseño portátil para estudio, trabajo y navegación","La configuración del sistema operativo puede variar según la unidad"]},
+{n:"Lenovo LOQ 15ARP9 RTX 4060",c:"Laptops",e:"💻",image:"https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=85",p:4499,o:0,t:"",d:"Ryzen 7 7435HS · 24 GB RAM · SSD 512 GB",f:["Procesador AMD Ryzen 7 7435HS de 8 núcleos y 16 hilos","Tarjeta gráfica NVIDIA GeForce RTX 4060 con 8 GB de memoria dedicada","Pantalla IPS de 15.6 pulgadas Full HD con frecuencia de hasta 144 Hz","Memoria RAM de 24 GB DDR5","Unidad SSD de 512 GB","Diseñada para juegos, creación de contenido y tareas exigentes","La potencia gráfica puede variar según la configuración de energía"]},
+{n:"Sony WH-CH520",c:"Audio",e:"🎧",image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=85",p:119,o:0,t:"",d:"Bluetooth · hasta 50 h de batería",f:["Audífonos inalámbricos con conexión Bluetooth","Hasta 50 horas de reproducción por carga, según el uso","Tecnología DSEE para mejorar el sonido de audio comprimido","Conexión multipunto para enlazar dos dispositivos compatibles","Micrófono integrado para llamadas manos libres","Diseño ligero de diadema con almohadillas acolchadas","Carga mediante USB-C y carga rápida"]},
+{n:"JBL Go 4",c:"Audio",e:"🔊",image:"https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=85",p:189,o:0,t:"",d:"Parlante Bluetooth · resistente al agua y polvo",f:["Parlante Bluetooth portátil con sonido JBL Pro","Resistencia al agua y al polvo con certificación IP67","Hasta 7 horas de reproducción; Playtime Boost puede añadir hasta 2 horas","Conexión Auracast para enlazar parlantes JBL compatibles","Batería recargable con puerto USB-C","Formato compacto con asa integrada para transportarlo","Autonomía y funciones pueden variar según el volumen y el contenido"]},
+{n:"Samsung Galaxy Fit3",c:"Wearables",e:"⌚",image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85",p:155,o:0,t:"",d:"Pantalla AMOLED 1.6'' · seguimiento de actividad",f:["Pantalla AMOLED de 1.6 pulgadas a color","Seguimiento de más de 100 tipos de actividad física","Registro de pasos, sueño y frecuencia cardíaca","Batería de hasta 13 días, según el uso","Resistencia al agua 5 ATM y certificación IP68","Notificaciones y controles al vincularlo con un teléfono compatible","Funciones disponibles según el teléfono y la aplicación Samsung Health"]},
+{n:"Logitech Gamepad F310",c:"Gaming",e:"🎮",image:"https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=800&q=85",p:119,o:0,t:"",d:"Control USB con XInput y DirectInput para PC",f:["Control con cable USB para jugar en PC","Compatible con los modos XInput y DirectInput","Distribución familiar de botones, cruceta y dos joysticks","Diez botones programables mediante el software compatible de Logitech","Cable de aproximadamente 1.8 metros","Compatible con Windows; algunos juegos pueden requerir configuración","No necesita batería ni carga"]},
+{n:"LG UltraGear 24GS60F-B · 24''",c:"Gaming",e:"🖥️",image:"https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=85",p:649,o:0,t:"",d:"Full HD IPS · 180 Hz · 1 ms",f:["Pantalla IPS de 23.8 pulgadas con resolución Full HD (1920 × 1080)","Frecuencia de actualización de hasta 180 Hz mediante DisplayPort","Tiempo de respuesta de 1 ms MBR","Compatible con AMD FreeSync y NVIDIA G-SYNC Compatible","Compatible con HDR10","Entradas HDMI y DisplayPort","La frecuencia máxima depende del puerto, cable y equipo conectado"]},
+{n:"Logitech G213 Prodigy RGB",c:"Accesorios",e:"⌨️",image:"https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=800&q=85",p:219,o:0,t:"",d:"Teclado gaming · iluminación RGB · resistente a salpicaduras",f:["Teclado gaming con teclas Logitech Mech-Dome","Iluminación RGB personalizable en cinco zonas","Resistente a salpicaduras accidentales","Sistema anti-ghosting para registrar varias teclas a la vez","Controles multimedia dedicados","Reposamuñecas integrado para apoyar las manos","Conexión USB por cable; personalización avanzada mediante Logitech G HUB"]},
+{n:"Logitech C920s HD Pro",c:"Accesorios",e:"📷",image:"https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=85",p:269,o:0,t:"",d:"Webcam Full HD 1080p · tapa de privacidad",f:["Video Full HD 1080p a 30 cuadros por segundo","Enfoque automático y corrección de iluminación","Lente de cristal con campo visual de 78 grados","Dos micrófonos estéreo integrados","Tapa física deslizante para proteger la privacidad","Clip universal para colocarla en monitores o trípodes compatibles","Funciona con aplicaciones de videollamadas compatibles con webcam"]},
+{n:"Anker PowerCore Essential · 20,000 mAh",c:"Accesorios",e:"🔋",image:"https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=800&q=85",p:169,o:0,t:"",d:"Batería portátil · carga USB de alta velocidad",f:["Capacidad de 20,000 mAh para recargar dispositivos en movimiento","Carga portátil para teléfonos, audífonos y otros equipos USB compatibles","Tecnología PowerIQ para adaptar la carga al dispositivo conectado","Permite cargar más de un dispositivo, según los puertos de la versión","Indicadores LED para consultar la carga restante","Recargable y reutilizable; requiere cable compatible","Velocidad, puertos y número de cargas dependen del equipo conectado y de la versión del producto"]},
+{n:"Microsoft 365 Personal · 12 meses",c:"Software",e:"🪟",image:"https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=85",p:299,o:0,t:"",d:"1 usuario · Word, Excel, PowerPoint y 1 TB en OneDrive",f:["Suscripción de 12 meses para una persona","Aplicaciones Word, Excel, PowerPoint, Outlook y OneNote","1 TB de almacenamiento en la nube de OneDrive","Uso de las aplicaciones en varios dispositivos compatibles","Actualizaciones incluidas mientras la suscripción esté activa","Permite guardar, sincronizar y compartir archivos en OneDrive","Activación y disponibilidad sujetas a la región y a una cuenta Microsoft"]},
+{n:"Windows 11 Home · licencia digital",c:"Software",e:"💻",image:"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=85",p:499,o:0,t:"",d:"Sistema operativo original · activación según región",f:["Licencia digital de Windows 11 Home","Para activar en un equipo compatible; verificar si es una licencia nueva o actualización antes de instalar","Interfaz con menú Inicio, escritorios y diseños de ventanas Snap","Incluye Microsoft Defender y funciones de seguridad de Windows","Requiere una PC compatible con los requisitos de Windows 11","La activación depende de la región, edición y condiciones de la licencia","Algunas funciones requieren conexión a Internet y una cuenta Microsoft"]},
+{n:"Norton 360 Deluxe · 5 dispositivos",c:"Software",e:"🛡️",image:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=85",p:179,o:0,t:"",d:"Antivirus y protección de privacidad · 12 meses",f:["Suscripción de 12 meses para hasta 5 dispositivos","Protección contra virus, malware y amenazas en línea","VPN para ayudar a proteger la conexión y la privacidad","Controles parentales en plataformas compatibles","Protección para PC, Mac y dispositivos móviles compatibles","Incluye herramientas de protección de identidad y navegación, según el sistema","Funciones disponibles sujetas a la región, el sistema operativo y el plan"]},
+{n:"Kaspersky Standard · 1 dispositivo",c:"Software",e:"🛡️",image:"https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=85",p:89,o:0,t:"",d:"Seguridad para PC, Mac o móvil · 12 meses",f:["Suscripción de 12 meses para 1 dispositivo","Protección antivirus contra malware y amenazas conocidas","Herramientas para detectar enlaces y sitios web peligrosos","Protección de pagos en línea en equipos compatibles","Funciones de seguridad y rendimiento según el sistema operativo","Compatible con plataformas seleccionadas de Windows, macOS, Android o iOS","Disponibilidad y funciones sujetas a la región y a la versión de la licencia"]},
+{n:"NordVPN Basic · 12 meses",c:"Software",e:"🔐",image:"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=85",p:249,o:0,t:"",d:"VPN para proteger la conexión · 1 cuenta",f:["Plan Basic con suscripción de 12 meses","Conexión VPN cifrada para ayudar a proteger la navegación","Oculta la dirección IP frente a los sitios que visitas","Aplicaciones para plataformas de escritorio y móviles compatibles","Permite seleccionar ubicaciones de servidores disponibles en el servicio","Una cuenta NordVPN para gestionar la suscripción","Las funciones y ubicaciones disponibles pueden variar según el país y el plan"]},
+{n:"Bitdefender Total Security · 5 dispositivos",c:"Software",e:"📄",image:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=85",p:159,o:0,t:"",d:"Protección multidispositivo · 12 meses",f:["Suscripción de 12 meses para hasta 5 dispositivos","Protección antivirus contra malware y amenazas web","Defensa en varias capas contra ransomware","Protección para Windows, macOS, Android e iOS compatibles","Herramientas contra enlaces fraudulentos y páginas de phishing","Incluye funciones adicionales de seguridad y privacidad según plataforma","La cantidad de dispositivos y las funciones dependen de la licencia y el sistema operativo"]},
+{n:"Apple iPhone 16 · 128 GB",c:"Celulares",e:"📱",image:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=85",p:3999,o:0,t:"",d:"Pantalla OLED 6.1'' · chip A18 · cámara dual de 48 MP",f:["Pantalla Super Retina XDR OLED de 6.1 pulgadas","Chip Apple A18 con CPU de 6 núcleos y GPU de 5 núcleos","Sistema de cámara Fusion de 48 MP y ultra gran angular de 12 MP","Almacenamiento interno de 128 GB","Botón Acción y control de cámara","Conectividad 5G, Wi-Fi y USB-C","Resistencia al agua y al polvo con clasificación IP68"]},
+{n:"Samsung Galaxy A36 5G · 128 GB",c:"Celulares",e:"📱",image:"https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=85",p:1099,o:0,t:"",d:"Super AMOLED 6.7'' · 5G · cámara principal 50 MP",f:["Pantalla Super AMOLED de 6.7 pulgadas con resolución Full HD+","Tasa de actualización de hasta 120 Hz","Procesador Snapdragon 6 Gen 3 y conectividad 5G","Almacenamiento interno de 128 GB","Cámara principal de 50 MP con estabilización óptica","Batería de 5,000 mAh con carga rápida de hasta 45 W","Resistencia al agua y al polvo con certificación IP67"]},
+{n:"Xiaomi Redmi Note 14 Pro 5G · 256 GB",c:"Celulares",e:"📱",image:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=85",p:1099,o:0,t:"",d:"8 GB RAM · pantalla AMOLED 120 Hz · cámara 200 MP",f:["Pantalla AMOLED de 6.67 pulgadas con resolución 1.5K","Tasa de actualización de hasta 120 Hz","Procesador MediaTek Dimensity 7300-Ultra con conectividad 5G","Memoria RAM de 8 GB y almacenamiento de 256 GB","Cámara principal de 200 MP con estabilización óptica","Batería de 5,110 mAh con carga rápida de hasta 45 W","Resistencia al agua y al polvo con certificación IP68"]},
+{n:"Apple iPhone 18 Pro · 256 GB",c:"Celulares",e:"📱",image:"https://www.apple.com/v/iphone-18-pro/e/images/meta/iphone-18-pro_overview__bl9no3txkonm_og.png?202611021140",p:64990,o:0,t:"Nuevo",d:"Chip A20 Pro · cámara Fusion de 48 MP · 256 GB",f:["Pantalla OLED de 6.3 pulgadas con ProMotion de hasta 120 Hz","Chip A20 Pro con sistema de refrigeración por cámara de vapor","Sistema de cámara Fusion de 48 MP con apertura variable","Almacenamiento interno de 256 GB","Diseño unibody con Ceramic Shield en la parte frontal y posterior","Conectividad 5G y puerto USB-C","El precio publicado es referencial; confirma disponibilidad, color y garantía antes de comprar"]},
+{n:"Samsung Galaxy S26 Ultra · 512 GB",c:"Celulares",e:"📱",image:"https://images.samsung.com/pe/smartphones/galaxy-s26-ultra/images/galaxy-s26-ultra-features-kv.jpg?imbypass=true",p:64990,o:0,t:"Nuevo",d:"Pantalla de privacidad integrada · cámara de 200 MP · S Pen",f:["Pantalla Dynamic AMOLED 2X de 6.9 pulgadas","Sistema de cámara principal de 200 MP","Procesador personalizado de alto rendimiento","Pantalla de privacidad integrada para controlar la visibilidad lateral","S Pen integrado","Almacenamiento interno de 512 GB","El precio publicado es referencial; confirma disponibilidad, color y garantía antes de comprar"]},
+{n:"Xiaomi Redmi Note 15 Pro+ 5G · 512 GB",c:"Celulares",e:"📱",image:"https://i02.appmifile.com/327_item_pe/19/01/2026/a365dac6c6b371e09a6f4ec7ce3fedce.png",p:21990,o:0,t:"Nuevo",d:"Snapdragon 7s Gen 4 · AMOLED 1.5K · cámara de 200 MP",f:["Pantalla AMOLED CrystalRes de 6.83 pulgadas con resolución 1.5K y hasta 120 Hz","Procesador Snapdragon 7s Gen 4","Memoria RAM de 12 GB y almacenamiento de 512 GB","Cámara principal de 200 MP con estabilización óptica","Batería de 6,500 mAh con carga rápida de 100 W","Protección Corning Gorilla Glass Victus 2","El precio publicado es referencial; confirma disponibilidad, color y garantía antes de comprar"]},
+{n:"HONOR 600 Pro · 512 GB",c:"Celulares",e:"📱",image:"https://www.honor.com/content/dam/honor/common/products/honor-600-pro/product/share.jpg",p:39990,o:0,t:"Nuevo",d:"Cámara principal de 200 MP · teleobjetivo periscópico · IP69K",f:["Cámara principal de 200 MP","Teleobjetivo periscópico de 50 MP con zoom óptico de 3.5× y estabilización","Protección contra agua y polvo con certificación IP69K","Almacenamiento interno de 512 GB","Funciones de imagen a video con inteligencia artificial, sujetas a región y actualizaciones","Pantalla OLED de alta resolución; configuración regional por confirmar","El precio publicado es referencial; confirma disponibilidad, color y garantía antes de comprar"]},
+{n:"ASUS ROG Strix G16 (2026) · RTX 5080",c:"Laptops",e:"💻",image:"https://dlcdnwebimgs.asus.com/gain/24000A14-8DB0-43FB-A670-FD5C6A052144",p:109990,o:0,t:"Nuevo",d:"Laptop gamer de 16'' · Intel Core Ultra · NVIDIA GeForce RTX",f:["Laptop gamer ASUS ROG Strix G16 modelo 2026, serie G615","Procesador Intel Core Ultra; el modelo exacto depende de la configuración","Gráficos NVIDIA GeForce RTX para laptop; GPU específica según SKU","Pantalla de 16 pulgadas; resolución, frecuencia y tecnología varían por configuración","Memoria RAM y almacenamiento dependen del SKU vendido","Revisa el código G615 y la configuración exacta antes de confirmar la compra","El precio publicado es referencial; disponibilidad y componentes dependen del SKU y la región"]}
+];
+const PRODUCT_VIDEO_IDS={
+ 0:"BU5h5A4Fji8",
+ 1:"uLPlgx5OswI",
+ 2:"pX5YB6iTG4o",
+ 3:"XFWyoiWUIlI",
+ 4:"H2XK-Qx1D5U",
+ 5:"cY9P-a7zG6c",
+ 6:"n4nRjA2glyM",
+ 7:"fzUV_6IIOJw",
+ 8:"4dN4eFC06v8",
+ 9:"buow8nmP0lg",
+ 10:"gSQSiRvv-GQ",
+ 11:"q0NXKSFbaHQ",
+ 12:"sg4xKPEeRO0",
+ 13:"ShaCjM6DIwQ",
+ 14:"GHQV-5qeqNU",
+ 15:"ta1zWKa3CCo",
+ 16:"v_UX7he4vXE",
+ 17:"eTQhGxQGfS0",
+ 18:"sdxUH1p81zA",
+ 19:"fZjYZ-6FL90",
+ 20:"1lFYrEIDs_4"
+};
+P.forEach(product=>{product.p=Number((product.p/10).toFixed(2));product.o=Number((product.o/10).toFixed(2))});
+const CATS=[["Celulares","📱"],["Laptops","💻"],["Audio","🎧"],["Wearables","⌚"],["Gaming","🎮"],["Accesorios","🔌"],["Software","🧩"]];
+const PRODUCT_GALLERIES={
+ "ASUS Vivobook Go 15 E1504FA":[
+  {src:"https://dlcdnwebimgs.asus.com/files/media/5e2878d7-7466-4222-9cb7-53e6c0e57781/v1/features/images/large/1x/s1/main.jpg",alt:"Vista del ASUS Vivobook Go 15 E1504FA"},
+  {src:"https://dlcdnwebimgs.asus.com/files/media/5e2878d7-7466-4222-9cb7-53e6c0e57781/v1/features/images/large/1x/s6/main.jpg",alt:"Detalle de diseño del ASUS Vivobook Go 15 E1504FA"},
+  {src:"https://dlcdnwebimgs.asus.com/files/media/5e2878d7-7466-4222-9cb7-53e6c0e57781/v1/features/images/large/1x/s7/main.jpg",alt:"Vista adicional del ASUS Vivobook Go 15 E1504FA"},
+  {src:"https://dlcdnwebimgs.asus.com/files/media/5e2878d7-7466-4222-9cb7-53e6c0e57781/v1/features/images/large/1x/s9/main.jpg",alt:"Detalle adicional del ASUS Vivobook Go 15 E1504FA"}
+ ],
+ "Lenovo LOQ 15ARP9 RTX 4060":[
+  {src:"https://p1-ofp.static.pub/fes/cms/2024/04/24/0z68x7bscbqzjkn9kymgwerrj4h9xf739066.png",alt:"Vista del diseño Lenovo LOQ"},
+  {src:"https://psrefstuff.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15ARP9/LOQ_15ARP9_OverViewPic.jpg",alt:"Vista del Lenovo LOQ 15ARP9"},
+  {src:"https://p3-ofp.static.pub/fes/cms/2024/04/24/7fn0c952m11sa6o9s7lpl7ienb7wbn329369.png",alt:"Detalle del diseño Lenovo LOQ"}
+ ],
+ "Apple iPhone 16e · 128 GB":[
+  {src:"https://www.apple.com/newsroom/images/2025/02/apple-debuts-iphone-16e-a-powerful-new-member-of-the-iphone-16-family/article/Apple-iPhone-16e-front-and-back-250219_inline.jpg.large_2x.jpg",alt:"Vista frontal y trasera del iPhone 16e"},
+  {src:"https://www.apple.com/newsroom/images/2025/02/apple-debuts-iphone-16e-a-powerful-new-member-of-the-iphone-16-family/article/Apple-iPhone-16e-hero-250219_inline.jpg.large_2x.jpg",alt:"Vista del iPhone 16e"},
+  {src:"https://www.apple.com/newsroom/images/2025/02/apple-debuts-iphone-16e-a-powerful-new-member-of-the-iphone-16-family/article/Apple-iPhone-16e-color-lineup-back-250219_inline.jpg.large_2x.jpg",alt:"Vistas traseras del iPhone 16e en diferentes colores"},
+  {src:"https://www.apple.com/newsroom/images/2025/02/apple-debuts-iphone-16e-a-powerful-new-member-of-the-iphone-16-family/article/Apple-iPhone-16e-USB-C-250219_inline.jpg.large_2x.jpg",alt:"Detalle del puerto USB-C del iPhone 16e"}
+ ],
+ "Samsung Galaxy A56 5G · 256 GB":[
+  {src:"https://images.samsung.com/is/image/samsung/assets/us/smartphones/galaxy-a56-5g/07162025/Galaxy_A56-FT03-KV_PC.jpg?$1440_N_JPG$",alt:"Vista frontal y trasera del Samsung Galaxy A56 5G"},
+  {src:"https://images.samsung.com/is/image/samsung/assets/us/smartphones/07192025/Galaxy_A56-design-FT03-pc.jpg?$1440_N_JPG$",alt:"Vista lateral y diseño del Samsung Galaxy A56 5G"}
+ ],
+ "Sony WH-CH520":[
+  {src:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6533/6533161cv12d.jpg",alt:"Vista del audífono Sony WH-CH520"},
+  {src:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6533/6533161_rd.jpg",alt:"Vista adicional del audífono Sony WH-CH520"},
+  {src:"https://m.media-amazon.com/images/I/61rFE093esL._AC_SL1500_.jpg",alt:"Detalle del diseño del audífono Sony WH-CH520"}
+ ],
+ "JBL Go 4":[
+  {src:"https://www.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw6a75fa54/pdp/JBL_GO_4_Box_Image_Black_CORE_1605x1605px.png?sw=550&sh=550",alt:"Vista del parlante JBL Go 4"},
+  {src:"https://id.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw7df78dd7/JBL_GO_4_FRONT_BLACK_48189_x1.png?sw=537&sfrm=png",alt:"Vista frontal del parlante JBL Go 4"},
+  {src:"https://vn.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwad17ed4b/JBL_GO_4_BACK_BLACK_48201_x1.png?sw=537&sfrm=png",alt:"Vista posterior del parlante JBL Go 4"},
+  {src:"https://ca.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw2155eb6f/JBL_GO_4_DETAIL_3_White_48342_x1.png",alt:"Detalle del parlante JBL Go 4"}
+ ],
+ "Samsung Galaxy Fit3":[
+  {src:"https://shop.samsung.com/latin/pub/media/catalog/product/cache/a69170b4a4f0666a52473c2224ba9220/s/m/sm-r390_000-all.png",alt:"Vista del reloj Samsung Galaxy Fit3"},
+  {src:"https://otc.lk/wp-content/uploads/2024/06/Samsung-SM-R390-Galaxy-Fit-3-Gray-by-otc.lk-in-srilanka-1-1024x1024.jpg",alt:"Vista frontal del Samsung Galaxy Fit3"},
+  {src:"https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/3/4/347197550-2.jpg",alt:"Vista adicional del Samsung Galaxy Fit3"}
+ ],
+ "Anker PowerCore Essential · 20,000 mAh":[
+  {src:"https://m.media-amazon.com/images/I/71s9NDno3FL._AC_SL1193_.jpg",alt:"Vista del cargador portátil Anker PowerCore Essential 20,000 mAh"},
+  {src:"https://m.media-amazon.com/images/I/71Rld5s-V1L._AC_SL1500_.jpg",alt:"Vista adicional del Anker PowerCore Essential 20,000 mAh"},
+  {src:"https://i.computer-bild.de/imgs/1/4/7/8/4/3/8/3/Anker-PowerCore-Essential-20000-7a0d3329ca4cebc5.jpg",alt:"Detalle del Anker PowerCore Essential 20,000 mAh"}
+ ],
+ "Logitech Gamepad F310":[
+  {src:"https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/f310/f310-gallery-1.png",alt:"Vista frontal del control Logitech F310"},
+  {src:"https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/f310/f310-gallery-2.png",alt:"Vista en ángulo del control Logitech F310"},
+  {src:"https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/f310/f310-gallery-3.png",alt:"Vista lateral del control Logitech F310"}
+ ],
+ "LG UltraGear 24GS60F-B · 24''":[
+  {src:"https://media.us.lg.com/transform/ecomm-PDPGallery-1100x730/eb69791e-e42c-4324-9579-a72c4666cfe6/Monitor_24GS60F-B_gallery_01_5000x5000",alt:"Vista frontal del monitor LG UltraGear 24GS60F-B"},
+  {src:"https://media.us.lg.com/transform/ecomm-PDPGallery-1100x730/145c2655-f0dc-480d-a9bb-bda231cad9c3/Monitor_24GS60F-B_gallery_04_10847x7902",alt:"Vista trasera y puertos del monitor LG UltraGear 24GS60F-B"}
+ ],
+ "Logitech G213 Prodigy RGB":[
+  {src:"https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/g213-finch/g213-gallery-1-nb.png",alt:"Vista superior del teclado Logitech G213"},
+  {src:"https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/g213-finch/g213-gallery-2-nb.png",alt:"Vista en ángulo del teclado Logitech G213"},
+  {src:"https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/g213-finch/g213-gallery-3-nb.png",alt:"Vista alternativa del teclado Logitech G213"}
+ ],
+ "Logitech C920s HD Pro":[
+  {src:"https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/c920s/gallery/c920s-gallery-1.png",alt:"Vista en ángulo de la cámara Logitech C920s con tapa abierta"},
+  {src:"https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/c920s/gallery/c920s-gallery-2.png",alt:"Vista en ángulo de la cámara Logitech C920s con tapa cerrada"},
+  {src:"https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/c920s/gallery/c920s-gallery-3.png",alt:"Vista frontal de la cámara Logitech C920s"}
+ ],
+ "Apple iPhone 16 · 128 GB":[
+  {src:"https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/article/Apple-iPhone-16-hero-240909_inline.jpg.large_2x.jpg",alt:"Vista del iPhone 16"},
+  {src:"https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/article/Apple-iPhone-16-lineup-240909_big.jpg",alt:"Vistas frontal y trasera del iPhone 16"},
+  {src:"https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/article/Apple-iPhone-16-finish-lineup-240909_big.jpg",alt:"Vistas traseras del iPhone 16 en diferentes colores"},
+  {src:"https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/article/Apple-iPhone-16-Camera-Control-01-240909_inline.jpg",alt:"Detalle del control de cámara del iPhone 16"}
+ ],
+ "Samsung Galaxy A36 5G · 128 GB":[
+  {src:"https://images.samsung.com/is/image/samsung/assets/us/smartphones/galaxy-a36-5g/07012025/Galaxy_A36-FT03-KV_PC.jpg?$1440_N_JPG$",alt:"Vista frontal y trasera del Samsung Galaxy A36 5G"},
+  {src:"https://images.samsung.com/is/image/samsung/assets/us/smartphones/galaxy-a36-5g/03172025/Galaxy_A36-FT02-camera-pc.jpg?$1440_N_JPG$",alt:"Detalle de las cámaras del Samsung Galaxy A36 5G"},
+  {src:"https://images.samsung.com/is/image/samsung/assets/us/smartphones/galaxy-a36-5g/03172025/Galaxy_A36-highlights-CO15-tab-1-design-pc.jpg?$684_684_JPG$",alt:"Vistas traseras del Samsung Galaxy A36 5G"}
+ ],
+ "Xiaomi Redmi Note 14 Pro 5G · 256 GB":[
+  {src:"https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-14-pro-5g/PC/3776f93ef1293344e6d636e5e02e9288.jpg?f=webp",alt:"Vista trasera y detalle de cámara del Xiaomi Redmi Note 14 Pro 5G"},
+  {src:"https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-14-pro-5g/PC/fd0bcf27ac82bdf2d9d2aba8fdd96f53.jpg?f=webp",alt:"Detalle de las cámaras del Xiaomi Redmi Note 14 Pro 5G"}
+ ],
+ "Microsoft 365 Personal · 12 meses":[
+  {src:"https://m.media-amazon.com/images/I/61iYgugWAVL._AC_SL1144_.jpg",alt:"Presentación de Microsoft 365 Personal por 12 meses"},
+  {src:"https://pcx.com.ph/cdn/shop/files/1-33.webp?v=1736934411&width=1090",alt:"Vista adicional de Microsoft 365 Personal"}
+ ],
+ "Windows 11 Home · licencia digital":[
+  {src:"https://static1.xdaimages.com/wordpress/wp-content/uploads/2023/03/windows-11-home-product-box.png",alt:"Presentación de Windows 11 Home"},
+  {src:"https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/139/13916/13916197.png",alt:"Vista del producto Windows 11 Home"}
+ ],
+ "Norton 360 Deluxe · 5 dispositivos":[
+  {src:"https://www.antivirussales.com/store/image/cache/data/Norton-360-Deluxe-5-Devices-500x500.png",alt:"Presentación de Norton 360 Deluxe para 5 dispositivos"},
+  {src:"https://www.compuworld.com.au/app/webroot/stuff/product_image/productImage_1948992951729563272.jpg",alt:"Vista adicional de Norton 360 Deluxe"}
+ ],
+ "Kaspersky Standard · 1 dispositivo":[
+  {src:"https://webshop.bitlab.rs/files/products/img/0139510_kaspersky-standard-1-device-1-year-eu.png",alt:"Presentación de Kaspersky Standard para 1 dispositivo"},
+  {src:"https://tecnobodega.com.gt/wp-content/uploads/2025/02/STANDARD_NoShadowBox_1_dispositivo_esp-scaled.png",alt:"Vista adicional de Kaspersky Standard"}
+ ],
+ "NordVPN Basic · 12 meses":[
+  {src:"https://m.media-amazon.com/images/I/61S0PBu79HL._AC_SL1500_.jpg",alt:"Presentación de la suscripción NordVPN Basic por 12 meses"},
+  {src:"https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/193/19320/19320999.jpg",alt:"Vista adicional de la suscripción NordVPN"}
+ ],
+ "Bitdefender Total Security · 5 dispositivos":[
+  {src:"https://m.media-amazon.com/images/I/61Bqg5OQF7L._AC_SL1500_.jpg",alt:"Presentación de Bitdefender Total Security para 5 dispositivos"},
+  {src:"https://m.media-amazon.com/images/I/81I63SIiy4L._AC_SL1500_.jpg",alt:"Vista adicional de Bitdefender Total Security"}
+ ]
+};
+P.forEach(product=>{
+ const images=PRODUCT_GALLERIES[product.n];
+ if(images?.length)product.image=images[0].src;
+});
+const $=s=>document.querySelector(s),money=v=>"S/ "+new Intl.NumberFormat("es-PE",{minimumFractionDigits:2,maximumFractionDigits:2}).format(v);
+function calculatePricing(subtotal,order=null){
+ if(order){const shipping=Number(order.shipping_fee),total=Number(order.total);return{subtotal,discount:Math.max(0,Math.round((subtotal+shipping-total)*100)/100),shipping,total}}
+ const discount=subtotal>299?Math.round(subtotal*0.30*100)/100:0,shipping=subtotal>=299?0:15;
+ return{subtotal,discount,shipping,total:Math.round((subtotal-discount+shipping)*100)/100};
+}
+const API="api.php";
+let cart={};
+let csrfToken="",currentUser=null,lastAccountOrders=null,checkoutAfterLogin=false,pendingOrderToResume=null,updatingOrderId=null,ubigeoData=null,trackingRefreshTimer=null,trackingRefreshError=false,customerComments=[];
+async function loadUbigeos(){
+ if(ubigeoData)return ubigeoData;
+ const response=await fetch("ubigeos_peru.json?v=1",{cache:"no-cache"});
+ if(!response.ok)throw new Error("No se pudo cargar la lista de departamentos y distritos. Recarga la página e inténtalo de nuevo.");
+ const data=await response.json();
+ if(data.departamentos?.length!==25||data.provincias?.length!==196||data.distritos?.length!==1892)throw new Error("La lista local de ubicaciones está incompleta. Contacta a soporte.");
+ ubigeoData=data;
+ const department=$("#checkoutDepartment");
+ department.innerHTML='<option value="">Selecciona un departamento</option>'+data.departamentos.map(item=>`<option value="${escapeHtml(item.codigo)}">${escapeHtml(item.nombre)}</option>`).join("");
+ return data;
+}
+function updateLocationOptions(){
+ if(!ubigeoData)return;
+ const department=$("#checkoutDepartment").value,province=$("#checkoutProvince").value,district=$("#checkoutDistrict").value;
+ const provinces=ubigeoData.provincias.filter(item=>item.departamento===department);
+ $("#checkoutProvince").innerHTML='<option value="">Selecciona una provincia</option>'+provinces.map(item=>`<option value="${escapeHtml(item.codigo)}">${escapeHtml(item.nombre)}</option>`).join("");
+ $("#checkoutProvince").disabled=!department;
+ if(provinces.some(item=>item.codigo===province))$("#checkoutProvince").value=province;
+ const selectedProvince=$("#checkoutProvince").value;
+ const districts=ubigeoData.distritos.filter(item=>item.departamento===department&&item.provincia===selectedProvince);
+ $("#checkoutDistrict").innerHTML='<option value="">Selecciona un distrito</option>'+districts.map(item=>`<option value="${escapeHtml(item.codigo)}">${escapeHtml(item.nombre)}</option>`).join("");
+ $("#checkoutDistrict").disabled=!selectedProvince;
+ if(districts.some(item=>item.codigo===district))$("#checkoutDistrict").value=district;
+ const motorized=department==="15"&&selectedProvince==="1501";
+ $("#deliveryMethodNote").textContent=selectedProvince?(motorized?"Tu pedido será entregado por motorizado en Lima Metropolitana.":"Tu pedido será enviado por Shalom. El seguimiento se actualizará desde la tienda."):"Elige tu departamento, provincia y distrito para asignar el transportista.";
+}
+function showToast(message,success=false){
+ const element=$("#toast");
+ element.classList.toggle("toast-success",success);
+ const check=element.querySelector(".toast-check");
+ check.classList.remove("animate");
+ if(success){void check.offsetWidth;check.classList.add("animate")}
+ $("#toastMessage").textContent=message;
+ element.classList.add("show");
+ clearTimeout(showToast.timer);
+ showToast.timer=setTimeout(()=>element.classList.remove("show"),success?3000:1800);
+}
+function toast(message){showToast(message)}
+function showAdminSuccess(target){
+ document.querySelectorAll(".admin-success-message").forEach(message=>message.remove());
+ const message=document.createElement("div"),check=document.createElement("span"),text=document.createElement("span");
+ message.className="admin-success-message";
+ message.setAttribute("role","status");
+ check.className="admin-success-check";
+ check.setAttribute("aria-hidden","true");
+ text.textContent="Modificado correctamente";
+ message.append(check,text);
+ if(target.matches(".order-card"))target.prepend(message);
+ else target.insertBefore(message,target.firstChild);
+ target.scrollIntoView({behavior:"smooth",block:"center"});
+ setTimeout(()=>message.remove(),5000);
+}
+function showPaymentSuccess(updatingReceipt=false){
+ const dialog=$("#paymentSuccessDialog");
+ $("#paymentSuccessTitle").textContent=updatingReceipt?"Comprobante enviado correctamente":"¡Pago enviado correctamente!";
+ $("#paymentSuccessMessage").textContent="Recibimos tu comprobante. El pago queda pendiente de revisión manual.";
+ const check=dialog.querySelector(".success-check");
+ check.classList.remove("animate");
+ void check.offsetWidth;
+ check.classList.add("animate");
+ dialog.showModal();
+ return new Promise(resolve=>{
+  let completed=false;
+  const finish=()=>{
+   if(completed)return;
+   completed=true;
+   clearTimeout(timer);
+   dialog.removeEventListener("close",finish);
+   resolve();
+  };
+  const timer=setTimeout(()=>{if(dialog.open)dialog.close();finish()},2600);
+  dialog.addEventListener("close",finish,{once:true});
+  $("#closePaymentSuccess").onclick=()=>dialog.close();
+ });
+}
+function getHelpAnswer(question){
+ const text=question.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+ if(/pago|pagar|yape|plin|transfer|comprobante/.test(text))return "Puedes pagar con Yape, Plin o transferencia bancaria. Al finalizar el pedido, sigue las instrucciones y adjunta una captura del pago. El comprobante queda pendiente de revisión manual.";
+ if(/envio|entrega|provincia|demora|llega/.test(text))return "Hacemos envíos a todo el Perú. La información de la tienda indica entregas estimadas de 24 horas en Lima y 72 horas a provincias; el envío es gratis desde S/ 299.";
+ if(/pedido|compra|seguimiento|estado|track/.test(text))return "Para consultar el estado, inicia sesión con tu cuenta desde el botón de usuario y revisa «Mis pedidos». Los pagos y comprobantes se revisan manualmente.";
+ if(/garantia|garantizado|original|originales|devol|cambio/.test(text))return "Los productos son nuevos y sellados, con garantía del fabricante. La duración depende de la marca y del producto. Para coordinar una revisión, escríbenos con tu número de pedido.";
+ if(/caracteristica|especificacion|detalles|producto|modelo/.test(text))return "En la sección Tienda, selecciona un producto para abrir su ficha y consultar descripción, precio y características. También puedes buscar por nombre o filtrar por categoría.";
+ if(/oferta|descuento|precio|promocion/.test(text))return "Los precios y ofertas vigentes aparecen en las tarjetas de productos. El carrito muestra el total, los descuentos aplicables y el costo de envío antes de finalizar la compra.";
+ if(/boleta|factura|comprobante tributario/.test(text))return "La tienda informa que puede emitir boleta o factura. Si no encuentras dónde indicar tus datos de facturación durante la compra, contáctanos por WhatsApp antes de finalizar.";
+ if(/contacto|asesor|persona|humano|whatsapp/.test(text))return "Puedes hablar con el equipo por WhatsApp al +51 921 203 723, de lunes a sábado, de 9:00 a 19:00.";
+ return "No encontré una respuesta exacta. Prueba con «pagos», «envíos», «pedido», «garantía» o «productos», o escríbenos por WhatsApp para recibir ayuda personal.";
+}
+function addHelpChatMessage(text,sender){
+ const message=document.createElement("p");
+ message.className=`chat-message ${sender}-message`;
+ message.textContent=text;
+ $("#helpChatMessages").append(message);
+ $("#helpChatMessages").scrollTop=$("#helpChatMessages").scrollHeight;
+}
+function answerHelpChat(question){
+ const clean=question.trim();
+ if(!clean)return;
+ addHelpChatMessage(clean,"user");
+ addHelpChatMessage(getHelpAnswer(clean),"bot");
+}
+function setHelpChatOpen(open){
+ const panel=$("#helpChat"),button=$("#openHelpChat");
+ panel.hidden=!open;
+ button.setAttribute("aria-expanded",String(open));
+ document.body.classList.toggle("chat-open",open);
+ if(open)$("#helpChatInput").focus();
+ else button.focus();
+}
+async function apiRequest(action,options={}){
+ const settings={method:options.method||"GET",credentials:"same-origin"};
+ if(options.form){options.form.set("csrf",csrfToken);settings.body=options.form}
+ const query=options.query?`&${new URLSearchParams(options.query)}`:"";
+ const response=await fetch(`${API}?action=${encodeURIComponent(action)}${query}`,settings);
+ const result=await response.json();
+ if(!response.ok){const error=new Error(result.error||"No se pudo completar la solicitud.");error.status=response.status;throw error}
+ return result;
+}
+async function refreshSession(){const state=await apiRequest("session");csrfToken=state.csrf;currentUser=state.user;updateAccountButton();return currentUser}
+async function loadCustomerComments(){
+ const result=await apiRequest("comments");
+ customerComments=result.comments;
+ const list=$("#customerCommentList");
+ list.replaceChildren();
+ customerComments.forEach(comment=>{
+  const card=document.createElement("blockquote"),text=document.createElement("p"),author=document.createElement("cite");
+  text.textContent=comment.comment;
+  const date=new Date(`${comment.created_at.replace(" ","T")}-05:00`);
+  author.textContent=`${comment.author} · ${Number.isNaN(date.getTime())?comment.created_at:date.toLocaleDateString("es-PE")}`;
+  card.append(text,author);
+  list.append(card);
+ });
+}
+function renderCustomerCommentControls(){
+ const isCustomer=currentUser?.role==="customer";
+ $("#customerCommentForm").hidden=!isCustomer;
+ $("#customerCommentLogin").hidden=isCustomer;
+ if(!isCustomer)$("#customerCommentLogin").querySelector("p").textContent=currentUser?.role==="admin"?"Los comentarios están habilitados para las cuentas de cliente.":"Inicia sesión con tu cuenta de cliente para publicar un comentario.";
+}
+function productById(id){return P.find((product,index)=>Number(product.id??index)===Number(id))}
+function addProductToCart(productId){
+ const product=productById(productId);
+ if(!product)return toast("No se encontró el producto.");
+ const inCart=Number(cart[productId]||0),stock=Number(product.stock||0);
+ if(inCart>=stock)return toast(stock>0?`Solo quedan ${stock} unidades disponibles de ${product.n}.`:`${product.n} está agotado.`);
+ cart[productId]=inCart+1;draw();toast("Agregado: "+product.n);
+}
+function cartStockIssue(){
+ return Object.entries(cart).map(([id,quantity])=>productById(id)).find(product=>product&&Number(cart[product.id]||0)>Number(product.stock||0));
+}
+async function loadCatalog(){
+ const result=await apiRequest("catalog");
+ result.products.forEach(product=>{
+  if(!product.custom){
+   const item=P[product.id];if(!item)return;
+   Object.assign(item,{id:Number(product.id),n:product.name,c:product.category||item.c,e:item.e,image:product.image||item.image,customImage:Boolean(product.custom_image),videoId:product.video_id||item.videoId||PRODUCT_VIDEO_IDS[product.id]||"",p:Number(product.effective_price),regularPrice:Number(product.price),offerPrice:product.offer_price===null?null:Number(product.offer_price),offerLabel:product.offer_label||"",stock:Number(product.stock),d:product.description||item.d,f:product.features||item.f});
+   return;
+  }
+  const existing=P.findIndex(item=>Number(item.id)===Number(product.id));
+  const entry={id:Number(product.id),n:product.name,c:product.category,e:"📦",image:product.image,customImage:Boolean(product.custom_image),videoId:product.video_id||"",p:Number(product.effective_price),regularPrice:Number(product.price),offerPrice:product.offer_price===null?null:Number(product.offer_price),offerLabel:product.offer_label||"",stock:Number(product.stock),o:0,t:"",d:product.description,f:product.features||[]};
+  if(existing<0)P.push(entry);else P[existing]=entry;
+ });
+ render();draw();
+ renderHeroProduct(heroProductIndex);
+ return result.products;
+}
+let heroProductIndex=0,heroImageIndex=0,heroRotationTimer=null;
+const HERO_IMAGES_WITHOUT_WHITE_BACKGROUND=new Set([
+ "https://www.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw6a75fa54/pdp/JBL_GO_4_Box_Image_Black_CORE_1605x1605px.png?sw=550&sh=550",
+ "https://id.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw7df78dd7/JBL_GO_4_FRONT_BLACK_48189_x1.png?sw=537&sfrm=png",
+ "https://vn.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwad17ed4b/JBL_GO_4_BACK_BLACK_48201_x1.png?sw=537&sfrm=png",
+ "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/f310/f310-gallery-1.png",
+ "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/f310/f310-gallery-2.png",
+ "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/f310/f310-gallery-3.png",
+ "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/g213-finch/g213-gallery-1-nb.png",
+ "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/g213-finch/g213-gallery-2-nb.png",
+ "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/non-braid/g213-finch/g213-gallery-3-nb.png",
+ "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/c920s/gallery/c920s-gallery-1.png",
+ "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/c920s/gallery/c920s-gallery-2.png",
+ "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/c920s/gallery/c920s-gallery-3.png"
+]);
+function productImagesFor(product){
+ if(!product.customImage&&PRODUCT_GALLERIES[product.n]?.length)return PRODUCT_GALLERIES[product.n];
+ return [{src:product.image,alt:`Fotografía de ${product.n}`}];
+}
+function heroProducts(){
+ return P.map(product=>({product,images:productImagesFor(product).filter(image=>HERO_IMAGES_WITHOUT_WHITE_BACKGROUND.has(image.src))})).filter(item=>item.images.length);
+}
+function renderHeroProduct(index,imageIndex=0){
+ const products=heroProducts(),showcase=$("#heroShowcase");
+ if(!products.length){showcase.hidden=true;return}
+ showcase.hidden=false;
+ heroProductIndex=(index+products.length)%products.length;
+ const {product,images}=products[heroProductIndex],image=$("#heroProductImage");
+ heroImageIndex=(imageIndex+images.length)%images.length;
+ const selectedImage=images[heroImageIndex];
+ image.dataset.fallback="";
+ image.classList.remove("hero-image-motion");
+ void image.offsetWidth;
+ image.classList.add("hero-image-motion");
+ image.src=selectedImage.src;
+ image.alt=`${selectedImage.alt}, ${product.c}`;
+ showcase.setAttribute("aria-label",`Ver ${product.n} en la tienda`);
+ image.onerror=()=>{
+  const fallback=images.find(candidate=>candidate.src===product.image)?.src;
+  if(image.dataset.fallback!=="used"&&fallback&&image.src!==new URL(fallback,location.href).href){
+   image.dataset.fallback="used";
+   image.src=fallback;
+  }else showcase.hidden=true;
+ };
+}
+function startHeroRotation(){
+ clearTimeout(heroRotationTimer);
+ if(matchMedia("(prefers-reduced-motion: reduce)").matches||document.hidden)return;
+ heroRotationTimer=setTimeout(()=>{
+  const {images}=heroProducts()[heroProductIndex];
+  if(heroImageIndex+1<images.length)renderHeroProduct(heroProductIndex,heroImageIndex+1);
+  else renderHeroProduct(heroProductIndex+1);
+  startHeroRotation();
+ },4000);
+}
+$("#heroShowcase").addEventListener("click",event=>{
+ const product=heroProducts()[heroProductIndex]?.product;
+ if(!product)return;
+ event.preventDefault();
+ $("#q").value="";
+ $("#cat").value="";
+ $("#sort").value="";
+ render();
+ const productId=Number(product.id??P.indexOf(product));
+ const card=[...document.querySelectorAll("#grid .p")].find(item=>Number(item.dataset.openProduct)===productId);
+ if(card){
+  card.scrollIntoView({behavior:"smooth",block:"center"});
+  card.focus({preventScroll:true});
+  history.replaceState(null,"","#tienda");
+ }
+});
+document.addEventListener("visibilitychange",startHeroRotation);
+renderHeroProduct(0);
+startHeroRotation();
+async function loadAdminProducts(){
+ await loadCatalog();
+ $("#adminProductList").innerHTML=P.map((product,index)=>{
+  const id=Number(product.id??index);
+  return `<form class="admin-product-row" data-product-edit="${id}"><h4>${escapeHtml(product.n)}</h4><label>Nombre<input name="name" maxlength="200" value="${escapeHtml(product.n)}" required></label><label>Categoría<select name="category" required>${CATS.map(([category])=>`<option${category===product.c?" selected":""}>${category}</option>`).join("")}</select></label><label>Precio normal (S/)<input name="price" type="number" min="0.01" max="99999999.99" step="0.01" value="${Number(product.regularPrice??product.p).toFixed(2)}" required></label><label>Stock disponible<input name="stock" type="number" min="0" max="1000000" step="1" value="${Number(product.stock||0)}" required></label><label>Descripción breve<input name="description" maxlength="255" value="${escapeHtml(product.d)}" required></label><label>Características (una por línea)<textarea name="features" rows="5" maxlength="5000" required>${escapeHtml(product.f.join("\n"))}</textarea></label><label>Video de YouTube (URL opcional)<input name="videoUrl" type="url" value="${product.videoId?`https://www.youtube.com/watch?v=${escapeHtml(product.videoId)}`:""}" placeholder="https://www.youtube.com/watch?v=..."></label><label>Precio de oferta (S/, opcional)<input name="offerPrice" type="number" min="0.01" max="99999999.99" step="0.01" value="${product.offerPrice===null||product.offerPrice===undefined?"":Number(product.offerPrice).toFixed(2)}"></label><label>Etiqueta de oferta<input name="offerLabel" maxlength="40" value="${escapeHtml(product.offerLabel||"")}" placeholder="Oferta, Liquidación..."></label><label>Cambiar imagen (opcional)<input name="image" type="file" accept="image/jpeg,image/png,image/webp"></label><button type="submit">Guardar cambios</button></form>`;
+ }).join("");
+}
+function updateAccountButton(){const button=$("#accountBtn");button.setAttribute("aria-label",currentUser?`Cuenta de ${currentUser.name}`:"Iniciar sesión");button.title=currentUser?`Cuenta de ${currentUser.name}`:"Iniciar sesión";if(typeof P!=="undefined")render();renderCustomerCommentControls()}
+function escapeHtml(value){return String(value).replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]))}
+function showProductDetails(productId){
+ const product=productById(productId);
+ if(!product)return toast("No se encontró el producto.");
+ const index=P.indexOf(product),images=productImagesFor(product),isAdmin=currentUser?.role==="admin",isOffer=product.offerPrice!==null&&product.offerPrice!==undefined&&product.offerPrice<product.regularPrice;
+ $("#productDetailCategory").textContent=product.c;
+ $("#productDetailTitle").textContent=product.n;
+ $("#productDetailDescription").textContent=product.d;
+ $("#productDetailPrice").innerHTML=isOffer?`<b>${money(product.p)}</b><s>${money(product.regularPrice)}</s>`:`<b>${money(product.p)}</b>`;
+ $("#productDetailStock").textContent=Number(product.stock)>0?`Disponibles: ${Number(product.stock)} unidades`:"Agotado";
+ $("#productDetailStock").classList.toggle("out-of-stock",Number(product.stock)===0);
+ $("#productDetailFeatures").innerHTML=product.f.map(feature=>`<li>${escapeHtml(feature)}</li>`).join("");
+ const videoId=/^[A-Za-z0-9_-]{11}$/.test(product.videoId||"")?product.videoId:"";
+ const videoSection=$("#productDetailVideo"),videoPreview=$("#productVideoPreview"),videoPlayer=$("#productVideoPlayer");
+ videoSection.hidden=!videoId;
+ videoPreview.hidden=false;
+ videoPreview.innerHTML=videoId?`<img src="https://i.ytimg.com/vi/${videoId}/hqdefault.jpg" alt="" loading="lazy"><span class="product-video-play" aria-hidden="true">▶</span><span class="visually-hidden">Reproducir video de ${escapeHtml(product.n)}</span>`:"";
+ videoPlayer.hidden=true;
+ videoPlayer.replaceChildren();
+ videoPreview.onclick=()=>{
+  videoPreview.hidden=true;
+  videoPlayer.hidden=false;
+  videoPlayer.innerHTML=`<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1&playsinline=1&rel=0&hl=es&cc_lang_pref=es&cc_load_policy=1" title="Video en español de ${escapeHtml(product.n)}" allow="autoplay; encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><button type="button" class="product-video-close">Cerrar video</button>`;
+  videoPlayer.scrollIntoView({behavior:"smooth",block:"center"});
+  videoPlayer.querySelector(".product-video-close").onclick=()=>{videoPlayer.replaceChildren();videoPlayer.hidden=true;videoPreview.hidden=false;videoPreview.focus()};
+ };
+ $("#productDetailGallery").innerHTML=`<div class="product-detail-image-wrap"><img id="productDetailImage" src="${escapeHtml(images[0].src)}" alt="${escapeHtml(images[0].alt)}">${images.length>1?`<button type="button" class="gallery-arrow gallery-previous" data-detail-step="-1" aria-label="Ver imagen anterior">‹</button><button type="button" class="gallery-arrow gallery-next" data-detail-step="1" aria-label="Ver imagen siguiente">›</button>`:""}</div>${images.length>1?`<div class="gallery-thumbnails">${images.map((image,imageIndex)=>`<button type="button" class="gallery-thumbnail${imageIndex===0?" selected":""}" data-detail-image="${imageIndex}" aria-label="${escapeHtml(image.alt)}" aria-pressed="${imageIndex===0}"><img src="${escapeHtml(image.src)}" alt=""></button>`).join("")}</div>`:""}`;
+ const action=$("#productDetailAction");
+ action.textContent=isAdmin?"Modificar":"Lo quiero";
+ action.disabled=!isAdmin&&Number(product.stock)===0;
+ if(action.disabled)action.textContent="Agotado";
+ action.dataset.detailAction=isAdmin?"edit":"add";
+ action.dataset.productId=String(productId);
+ $("#productDetailGallery").dataset.productIndex=String(index);
+ $("#productDetailDialog").showModal();
+}
+function setAuthMode(mode){
+ const registering=mode==="register";
+ $("#loginForm").hidden=registering;$("#registerForm").hidden=!registering;
+ $("#authFormTitle").textContent=registering?"Crear una cuenta":"Iniciar sesión";
+ $("#authMessage").textContent="";
+ (registering?$("#registerForm"):$("#loginForm")).querySelector("input").focus();
+}
+async function openAccount(checkSession=true){
+ if(!$("#accountDialog").open)$("#accountDialog").showModal();
+ try{if(checkSession)await refreshSession();if(currentUser)await showAccountDashboard();else{$("#accountView").hidden=true;$("#authView").hidden=false;setAuthMode("login")}}
+ catch(error){$("#authMessage").textContent=error.message}
+}
+async function requestCheckoutLogin(message,refreshState=false){
+ checkoutAfterLogin=true;$("#drawer").classList.remove("open");
+ if($("#checkoutDialog").open)$("#checkoutDialog").close();
+ currentUser=null;updateAccountButton();
+ if(refreshState){
+  try{await refreshSession();if(currentUser){checkoutAfterLogin=false;await loadUbigeos();beginCheckout();return}}
+  catch(error){$("#authMessage").textContent=error.message}
+ }
+ await openAccount(false);$("#authMessage").textContent=message;
+}
+async function loadAccountOrders(){
+ const result=await apiRequest("orders");
+ lastAccountOrders=result;
+ if(currentUser.role==="admin"){
+  renderAdminDashboard(result.customers);
+  $("#adminUnpaid").innerHTML=renderCustomerOrderGroups(result.customers,"pending","No hay pedidos sin pagar.");
+  $("#adminCancelled").innerHTML=renderCustomerOrderGroups(result.customers,"cancelled","No hay pedidos cancelados.");
+  $("#adminReceipts").innerHTML=result.customers.map(customer=>{
+   const orders=customer.orders.filter(order=>order.has_receipt).map(order=>renderPaymentReceipt(order,customer.name,customer.email||customer.phone)).join("");
+   return orders?`<section class="receipt-customer"><h4>${escapeHtml(customer.name)}</h4><p class="order-meta">${escapeHtml(customer.email||customer.phone||"Sin correo ni teléfono")}</p><div class="receipt-grid">${orders}</div></section>`:"";
+  }).join("")||'<p class="order-meta">Todavía no hay comprobantes de pago.</p>';
+  $("#adminCustomers").innerHTML=result.customers.map(customer=>{
+   const orders=customer.orders.map(order=>renderOrder(order,true)).join("");
+    return `<div class="customer-group"><h3>${escapeHtml(customer.name)}</h3><p class="order-meta">${escapeHtml(customer.email||customer.phone||"Sin correo ni teléfono")}</p>${orders||'<p class="order-meta">Sin pedidos registrados.</p>'}</div>`;
+  }).join("")||'<p class="order-meta">Aún no hay clientes registrados.</p>';
+ }else{
+  $("#customerOrders").innerHTML=result.orders.map(order=>renderOrder(order,false)).join("")||'<p class="order-meta">Aún no tienes pedidos.</p>';
+  $("#customerReceipts").innerHTML=result.orders.filter(order=>order.has_receipt).map(order=>renderPaymentReceipt(order,currentUser.name,currentUser.email||currentUser.phone)).join("")||'<p class="order-meta">Todavía no has adjuntado comprobantes de pago.</p>';
+ }
+}
+function renderAdminDashboard(customers){
+ const orders=customers.flatMap(customer=>customer.orders.map(order=>({...order,customer_name:customer.name})));
+ const cancelled=orders.filter(order=>order.status==="cancelled");
+ const rejected=orders.filter(order=>order.status==="rejected");
+ const approved=orders.filter(order=>order.status==="approved");
+ const pending=orders.filter(order=>order.status==="pending");
+ const soldUnits=approved.reduce((total,order)=>total+order.items.reduce((count,item)=>count+Number(item.quantity),0),0);
+ const collectedRevenue=approved.reduce((total,order)=>total+Number(order.total),0);
+ $("#adminDashboardMetrics").innerHTML=[
+  ["Unidades vendidas",soldUnits],
+  ["Ingresos cobrados",money(collectedRevenue)],
+  ["Pedidos pagados",approved.length],
+  ["Pedidos cancelados",cancelled.length],
+  ["Pedidos rechazados",rejected.length]
+ ].map(([label,value])=>`<article class="admin-dashboard-metric"><span>${label}</span><strong>${value}</strong></article>`).join("");
+ const now=new Date(),monthlySales=Array.from({length:6},(_,index)=>{
+  const date=new Date(now.getFullYear(),now.getMonth()-5+index,1);
+  return {key:`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,"0")}`,label:new Intl.DateTimeFormat("es-PE",{month:"short"}).format(date).replace(".",""),revenue:0,units:0,orders:0};
+ });
+ const monthByKey=new Map(monthlySales.map(month=>[month.key,month]));
+ approved.forEach(order=>{
+  const dateMatch=String(order.created_at).match(/^(\d{4})-(\d{2})/);
+  const month=dateMatch&&monthByKey.get(`${dateMatch[1]}-${dateMatch[2]}`);
+  if(!month)return;
+  month.orders++;
+  month.revenue+=Number(order.total);
+  month.units+=order.items.reduce((count,item)=>count+Number(item.quantity),0);
+ });
+ const chartWidth=760,chartHeight=320,chartLeft=70,chartRight=54,chartTop=24,chartBottom=58,plotWidth=chartWidth-chartLeft-chartRight,plotHeight=chartHeight-chartTop-chartBottom;
+ const maxRevenue=Math.max(1,...monthlySales.map(month=>month.revenue)),maxUnits=Math.max(1,...monthlySales.map(month=>month.units));
+ const currencyTick=value=>value>=1000?`S/${(value/1000).toFixed(value%1000?1:0)}k`:`S/${Math.round(value)}`;
+ const grid=Array.from({length:5},(_,index)=>{
+  const value=maxRevenue*(4-index)/4,y=chartTop+plotHeight*index/4;
+  return `<line x1="${chartLeft}" y1="${y}" x2="${chartWidth-chartRight}" y2="${y}" class="admin-sales-gridline"/><text x="${chartLeft-10}" y="${y+4}" text-anchor="end" class="admin-sales-axis-label">${currencyTick(value)}</text>`;
+ }).join("");
+ const points=monthlySales.map((month,index)=>{
+  const x=chartLeft+plotWidth*(index+.5)/monthlySales.length,y=chartTop+plotHeight*(1-month.units/maxUnits);
+  return {month,x,y};
+ });
+ const barWidth=Math.min(54,plotWidth/monthlySales.length*.46);
+ const bars=points.map(({month,x})=>{
+  const height=month.revenue/maxRevenue*plotHeight,y=chartTop+plotHeight-height;
+  return `<rect x="${x-barWidth/2}" y="${y}" width="${barWidth}" height="${height}" rx="5" class="admin-sales-income-bar"><title>${escapeHtml(month.label)}: ${money(month.revenue)} cobrados; ${month.units} unidades</title></rect>`;
+ }).join("");
+ const unitsLine=points.map((point,index)=>`${index?"L":"M"} ${point.x} ${point.y}`).join(" ");
+ const markers=points.map(({month,x,y})=>`<circle cx="${x}" cy="${y}" r="5" class="admin-sales-unit-marker"><title>${escapeHtml(month.label)}: ${month.units} unidades</title></circle><text x="${x}" y="${y-12}" text-anchor="middle" class="admin-sales-unit-label">${month.units}</text>`).join("");
+ const monthLabels=points.map(({month,x})=>`<text x="${x}" y="${chartHeight-25}" text-anchor="middle" class="admin-sales-axis-label">${escapeHtml(month.label)}</text>`).join("");
+ const unitAxis=`<text x="${chartWidth-chartRight+10}" y="${chartTop+4}" class="admin-sales-axis-label">${maxUnits}</text><text x="${chartWidth-chartRight+10}" y="${chartTop+plotHeight+4}" class="admin-sales-axis-label">0</text>`;
+ const svg=`<svg viewBox="0 0 ${chartWidth} ${chartHeight}" role="img" aria-label="Ingresos cobrados y unidades vendidas por mes en los últimos seis meses">${grid}${bars}<path d="${unitsLine}" class="admin-sales-unit-line"/>${markers}${monthLabels}${unitAxis}</svg>`;
+ $("#adminSalesChart").innerHTML=monthlySales.some(month=>month.orders)
+  ?`${svg}<div class="admin-sales-month-list">${monthlySales.map(month=>`<div><strong>${escapeHtml(month.label)}</strong><span>${money(month.revenue)}</span><small>${month.units} ${month.units===1?"unidad":"unidades"}</small></div>`).join("")}</div>`
+  :'<p class="order-meta">No hay pedidos aprobados en los últimos seis meses.</p>';
+ const statusData=[
+  {label:"Aprobados",count:approved.length,color:"#39765b"},
+  {label:"Pendientes",count:pending.length,color:"#c18a27"},
+  {label:"Cancelados",count:cancelled.length,color:"#b64b42"},
+  {label:"Rechazados",count:rejected.length,color:"#52677d"}
+ ];
+ const totalOrders=statusData.reduce((total,status)=>total+status.count,0);
+ let chartPosition=0;
+ const chartStops=statusData.map(status=>{
+  const start=chartPosition;
+  chartPosition+=totalOrders?status.count/totalOrders*100:0;
+  return `${status.color} ${start}% ${chartPosition}%`;
+ });
+ $("#adminOrderChart").style.background=totalOrders
+  ?`conic-gradient(${chartStops.join(",")})`
+  :"conic-gradient(var(--line) 0% 100%)";
+ $("#adminOrderChart").setAttribute("aria-label",`Estado de ${totalOrders} pedidos: ${statusData.map(status=>`${status.count} ${status.label.toLowerCase()}`).join(", ")}`);
+ $("#adminOrderChart").innerHTML=`<span>${totalOrders}<small>pedidos</small></span>`;
+ $("#adminOrderChartLegend").innerHTML=statusData.map(status=>`<div class="admin-order-chart-legend-item"><span class="admin-order-chart-swatch" style="--chart-color:${status.color}" aria-hidden="true"></span><span>${status.label}</span><strong>${status.count}</strong></div>`).join("");
+ const products=new Map();
+ approved.forEach(order=>order.items.forEach(item=>{
+  const key=String(item.product_id);
+  const product=products.get(key)||{name:item.product_name,quantity:0,revenue:0};
+  const quantity=Number(item.quantity);
+  product.quantity+=quantity;
+  product.revenue+=quantity*Number(item.unit_price);
+  products.set(key,product);
+ }));
+ const ranking=[...products.values()].sort((a,b)=>b.quantity-a.quantity||b.revenue-a.revenue).slice(0,5);
+ $("#adminTopProducts").innerHTML=ranking.length
+  ?`<div class="admin-dashboard-table-wrap"><table class="admin-dashboard-table"><thead><tr><th>Producto</th><th>Unidades</th><th>Importe vendido</th></tr></thead><tbody>${ranking.map(product=>`<tr><td>${escapeHtml(product.name)}</td><td>${product.quantity}</td><td>${money(product.revenue)}</td></tr>`).join("")}</tbody></table></div>`
+  :'<p class="order-meta">Aún no hay pedidos aprobados para calcular los productos más vendidos.</p>';
+ const renderStatusOrders=items=>items.length
+  ?items.map(order=>`<article class="admin-dashboard-order"><strong>Pedido #${Number(order.id)} · ${escapeHtml(order.customer_name)}</strong><span>${escapeHtml(order.created_at)}</span><p>${order.items.map(item=>`${escapeHtml(item.product_name)} × ${Number(item.quantity)}`).join(" · ")}</p><strong>${money(Number(order.total))}</strong></article>`).join("")
+  :'<p class="order-meta">No hay pedidos en este estado.</p>';
+ $("#adminDashboardCancelled").innerHTML=renderStatusOrders(cancelled);
+ $("#adminDashboardRejected").innerHTML=renderStatusOrders(rejected);
+}
+function renderPaymentReceipt(order,customerName,customerEmail){
+ const orderId=Number(order.id),receiptUrl=`${API}?action=receipt&id=${orderId}`;
+ const status={pending:"Pendiente de revisión",approved:"Pago aprobado",rejected:"Pago observado",cancelled:"Pedido cancelado"}[order.status]||"Pedido";
+ return `<article class="payment-receipt"><div class="receipt-heading"><strong>Pedido #${orderId}</strong><span class="status">${status}</span></div>${customerName?`<p class="order-meta">${escapeHtml(customerName)}${customerEmail?` · ${escapeHtml(customerEmail)}`:""}</p>`:""}<p class="order-meta">${escapeHtml(order.created_at)} · ${escapeHtml(order.payment_method)} · ${money(Number(order.total))}</p><a class="receipt-preview-link" href="${receiptUrl}" target="_blank" rel="noopener noreferrer" aria-label="Abrir comprobante de pago del pedido ${orderId}"><img class="receipt-thumb" src="${receiptUrl}" alt="Comprobante de pago adjuntado al pedido ${orderId}" loading="lazy" decoding="async"></a><a class="receipt-download" href="${receiptUrl}&download=1">Descargar imagen del comprobante</a></article>`;
+}
+function renderCustomerOrderGroups(customers,status,emptyMessage){
+ const groups=customers.map(customer=>{
+  const orders=customer.orders.filter(order=>order.status===status).map(order=>renderOrder(order,true)).join("");
+  return orders?`<div class="customer-group"><h4>${escapeHtml(customer.name)}</h4><p class="order-meta">${escapeHtml(customer.email||customer.phone||"Sin correo ni teléfono")}</p>${orders}</div>`:"";
+ }).join("");
+ return groups||`<p class="order-meta">${emptyMessage}</p>`;
+}
+function renderOrder(order,admin){
+ const status={pending:"No pagado",approved:"Pagado",rejected:"Observado",cancelled:"Cancelado"}[order.status]||"Pendiente";
+ const items=order.items.map(item=>`${escapeHtml(item.product_name)} × ${Number(item.quantity)}`).join(" · ");
+ const cancellation=admin&&order.status==="cancelled"?`<p class="order-meta">Cancelado el ${escapeHtml(order.cancelled_at||"")} · ${escapeHtml(order.cancellation_reason||"Cancelado por administración")}</p>`:"";
+ const receiptUrl=`${API}?action=receipt&id=${Number(order.id)}`;
+ const receipt=order.has_receipt?`${admin?`<img class="receipt-thumb" src="${receiptUrl}" alt="Comprobante del pedido ${Number(order.id)}" loading="lazy">`:""}<a class="receipt-download" href="${receiptUrl}&download=1">Descargar comprobante de pago</a>`:"<p class=\"order-meta\">No se encontró un comprobante de pago para este pedido.</p>";
+ const review=admin&&order.status==="pending"?`<div class="review-actions"><button class="icon" data-review="approved" data-order="${Number(order.id)}">Aprobar</button><button class="icon" data-review="rejected" data-order="${Number(order.id)}">Observar</button><button class="icon" data-cancel-order="${Number(order.id)}">Cancelar pedido</button></div>`:"";
+ const resume=!admin&&order.status==="pending"?`<div class="review-actions"><button class="icon" data-resume-order="${Number(order.id)}">Continuar pago</button></div>`:"";
+ const location=[order.distrito,order.provincia,order.departamento].filter(Boolean).map(escapeHtml).join(", ");
+ const tracking=renderTracking(order,admin);
+ return `<article class="order-card" data-order-id="${Number(order.id)}"><div class="order-head"><strong>Pedido #${Number(order.id)}</strong><span class="status">${status}</span></div><p class="order-meta">${escapeHtml(order.created_at)} · ${escapeHtml(order.payment_method)}</p>${cancellation}${admin?`<p class="order-meta">Entrega: ${escapeHtml(order.address)} · ${location} · ${escapeHtml(order.phone)}</p>`:""}<p class="order-items">${items}</p><strong>Total: ${money(Number(order.total))}</strong>${tracking}<div class="order-downloads"><div class="review-actions"><button type="button" class="icon" data-print-order="${Number(order.id)}">Imprimir</button><button type="button" data-download-order="${Number(order.id)}">Descargar PDF</button></div>${receipt}</div>${review}${resume}</article>`;
+}
+function renderTracking(order,admin){
+ if(order.status!=="approved")return "";
+ const statusLabels={preparando:"Preparando pedido",en_transito:"En tránsito",en_reparto:"En reparto",entregado:"Entregado",incidencia:"Incidencia",pendiente_pago:"Pendiente de aprobación del pago"};
+ const currentStatus=statusLabels[order.shipping_status]||"Seguimiento pendiente";
+ const events=(order.tracking_events||[]).map(event=>`<li><strong>${escapeHtml(statusLabels[event.estado]||event.estado)}</strong><span>${escapeHtml(event.detalle)} · ${escapeHtml(event.created_at)}</span></li>`).join("");
+ const deliveryCode=!admin&&order.delivery_code?`<p class="delivery-code"><strong>Código para entregar al repartidor:</strong> <code>${escapeHtml(order.delivery_code)}</code></p>`:"";
+ const availableTransitions={preparando:["en_transito","incidencia"],en_transito:["en_reparto","incidencia"],en_reparto:["entregado","incidencia"],incidencia:["en_transito","en_reparto"]}[order.shipping_status]||[];
+ const updateForm=admin&&availableTransitions.length?`<form class="tracking-update" data-tracking-update="${Number(order.id)}"><label>Actualizar estado<select name="status" required>${availableTransitions.map(value=>`<option value="${value}">${statusLabels[value]}</option>`).join("")}</select></label><label data-tracking-code hidden>Código que entrega el cliente<input name="deliveryCode" type="text" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="one-time-code"></label><label data-tracking-detail hidden>Detalle de la incidencia<input name="detail" maxlength="255"></label><button type="submit">Guardar estado</button></form>`:"";
+ return `<section class="order-tracking"><h4>Seguimiento del envío</h4><p class="order-meta"><strong>Estado:</strong> ${escapeHtml(currentStatus)} · <strong>Transportista:</strong> ${escapeHtml(order.transportista||"Por asignar")} · <strong>Código:</strong> <code>${escapeHtml(order.tracking_code||"Pendiente")}</code></p><p class="order-meta">Destino: ${[order.distrito,order.provincia,order.departamento].filter(Boolean).map(escapeHtml).join(", ")}</p>${deliveryCode}${events?`<ol class="tracking-timeline">${events}</ol>`:""}${updateForm}</section>`;
+}
+function showOrderConfirmation(orderId){
+ const order=lastAccountOrders?.orders?.find(item=>Number(item.id)===Number(orderId));
+ if(!order){toast("El pedido se registró, pero no se pudo cargar su resumen. Puedes consultarlo en Mi cuenta.");return}
+ const status={pending:"Comprobante recibido; pago pendiente de revisión",approved:"Pago aprobado",rejected:"Pago observado",cancelled:"Pedido cancelado"}[order.status]||"Pedido registrado";
+ const itemRows=order.items.map(item=>`<tr><td>${escapeHtml(item.product_name)}</td><td>${Number(item.quantity)}</td><td>${money(Number(item.unit_price))}</td><td>${money(Number(item.unit_price)*Number(item.quantity))}</td></tr>`).join("");
+ const receipt=order.has_receipt?`<p class="order-confirmation-receipt"><a href="${API}?action=receipt&id=${Number(order.id)}" target="_blank" rel="noopener noreferrer">Ver comprobante adjuntado</a></p>`:"";
+ $("#orderConfirmationContent").innerHTML=`<p class="order-confirmation-status" role="status">${escapeHtml(status)}</p>
+<div class="order-confirmation-grid">
+<label>Cliente<input readonly value="${escapeHtml(order.customer_name||currentUser.name)}"></label>
+<label>Correo<input readonly value="${escapeHtml(order.customer_email||currentUser.email||"No registrado")}"></label>
+<label>Teléfono<input readonly value="${escapeHtml(order.phone||"")}"></label>
+<label>Dirección de entrega<input readonly value="${escapeHtml(order.address||"")}"></label>
+<label>Departamento, provincia y distrito<input readonly value="${escapeHtml([order.departamento,order.provincia,order.distrito].filter(Boolean).join(", "))}"></label>
+<label>Pedido<input readonly value="#${Number(order.id)} · ${escapeHtml(order.created_at)}"></label>
+<label>Método de pago<input readonly value="${escapeHtml(order.payment_method)}"></label>
+</div>
+<h3>Productos seleccionados</h3>
+<div class="order-confirmation-table-wrap"><table class="order-confirmation-table"><thead><tr><th>Producto</th><th>Cant.</th><th>Precio</th><th>Importe</th></tr></thead><tbody>${itemRows}</tbody></table></div>
+<div class="order-confirmation-totals"><div><span>Subtotal</span><strong>${money(Number(order.subtotal))}</strong></div>${Number(order.discount)?`<div><span>Descuento</span><strong>− ${money(Number(order.discount))}</strong></div>`:""}<div><span>Envío</span><strong>${Number(order.shipping_fee)?money(Number(order.shipping_fee)):"Gratis"}</strong></div><div class="order-confirmation-grand-total"><span>Total del pago</span><strong>${money(Number(order.total))}</strong></div></div>
+${receipt}<p class="order-confirmation-note">El comprobante fue recibido y el pago queda pendiente de revisión manual. Este resumen no es una boleta fiscal ni confirma la aprobación del pago.</p>`;
+ $("#downloadOrderConfirmationPdf").dataset.downloadOrder=String(order.id);
+$("#printOrderConfirmation").dataset.printOrder=String(order.id);
+$("#orderConfirmationDialog").showModal();
+}
+function findOrderById(orderId){
+const order=currentUser.role==="admin"
+ ?lastAccountOrders.customers.flatMap(customer=>customer.orders).find(item=>Number(item.id)===orderId)
+ :lastAccountOrders.orders.find(item=>Number(item.id)===orderId);
+return order;
+}
+async function downloadOrderPdf(orderId){
+ const order=findOrderById(orderId);
+ if(!order)return toast("No se encontró el pedido para generar el comprobante.");
+ try{
+  const logo=new Image();
+  logo.src=new URL("logo.png",location.href).href;
+  await logo.decode();
+  const pageWidth=595,pageHeight=842,scale=2,pages=[];
+  const statusLabels={pending:"PENDIENTE DE REVISION",approved:"PAGO APROBADO",rejected:"PAGO OBSERVADO",cancelled:"PEDIDO CANCELADO"};
+  const statusColors={pending:"#a46b11",approved:"#39765b",rejected:"#b64b42",cancelled:"#626b76"};
+  const customerName=order.customer_name||currentUser.name,customerEmail=order.customer_email||currentUser.email||"No registrado";
+  const formatDate=value=>{
+   const date=new Date(String(value).replace(" ","T"));
+   return Number.isNaN(date.getTime())?String(value||"—"):new Intl.DateTimeFormat("es-PE",{dateStyle:"medium",timeStyle:"short"}).format(date);
+  };
+  const roundRect=(context,x,y,width,height,radius,fill,stroke)=>{
+   context.beginPath();context.roundRect(x,y,width,height,radius);
+   if(fill){context.fillStyle=fill;context.fill()}
+   if(stroke){context.strokeStyle=stroke;context.lineWidth=1;context.stroke()}
+  };
+  const wrapText=(context,text,maxWidth)=>{
+   const words=String(text??"").split(/\s+/),lines=[];
+   let line="";
+   words.forEach(word=>{
+    const candidate=line?`${line} ${word}`:word;
+    if(line&&context.measureText(candidate).width>maxWidth){lines.push(line);line=word}
+    else line=candidate;
+   });
+   if(line)lines.push(line);
+   return lines.length?lines:[""];
+  };
+  const addPage=(continuation=false)=>{
+   const canvas=document.createElement("canvas");
+   canvas.width=pageWidth*scale;canvas.height=pageHeight*scale;
+   const context=canvas.getContext("2d");
+   context.scale(scale,scale);
+   context.fillStyle="#f3f5f7";context.fillRect(0,0,pageWidth,pageHeight);
+   context.fillStyle="#202a36";context.fillRect(0,0,pageWidth,continuation?112:148);
+   const logoScale=Math.min(78/logo.naturalWidth,86/logo.naturalHeight),logoWidth=logo.naturalWidth*logoScale,logoHeight=logo.naturalHeight*logoScale;
+   context.drawImage(logo,38+(78-logoWidth)/2,26+(86-logoHeight)/2,logoWidth,logoHeight);
+   context.fillStyle="#ffffff";context.font="700 22px Arial";context.fillText("ZyP TECH S.A.C.",132,54);
+   context.fillStyle="#d4dbe2";context.font="12px Arial";context.fillText("TECNOLOGIA · CONFIANZA · SERVICIO",132,76);
+   context.fillText("hola@zyptech.pe  ·  +51 921 203 723",132,99);
+   context.textAlign="right";context.fillStyle="#ffffff";context.font="700 12px Arial";
+   context.fillText(continuation?"DETALLE DEL PEDIDO":"COMPROBANTE DE PEDIDO Y PAGO",557,42);
+   context.font="700 20px Arial";context.fillText(`#${Number(order.id)}`,557,70);
+   context.textAlign="left";
+   if(continuation){context.fillStyle="#273443";context.font="700 18px Arial";context.fillText("Detalle de productos · continuación",38,145)}
+   const page={canvas,context,y:continuation?166:170};
+   pages.push(page);
+   return page;
+  };
+  let page=addPage(),context=page.context;
+  roundRect(context,38,160,519,55,8,"#ffffff","#d8dee5");
+  context.fillStyle=statusColors[order.status]||"#52677d";context.beginPath();context.arc(61,187,7,0,Math.PI*2);context.fill();
+  context.fillStyle="#252b33";context.font="700 15px Arial";context.fillText(statusLabels[order.status]||"PEDIDO REGISTRADO",79,192);
+  context.fillStyle="#687481";context.font="12px Arial";context.textAlign="right";context.fillText(formatDate(order.created_at),543,191);context.textAlign="left";
+  roundRect(context,38,229,519,124,8,"#ffffff","#d8dee5");
+  context.fillStyle="#273443";context.font="700 14px Arial";context.fillText("DATOS DEL CLIENTE",55,253);
+  const drawLabelValue=(label,value,x,y,width)=>{
+   context.fillStyle="#687481";context.font="11px Arial";context.fillText(label.toUpperCase(),x,y);
+   context.fillStyle="#252b33";context.font="14px Arial";
+   wrapText(context,value,width).slice(0,2).forEach((line,index)=>context.fillText(line,x,y+19+index*17));
+  };
+  drawLabelValue("Cliente",customerName,55,276,220);
+  drawLabelValue("Correo",customerEmail,320,276,215);
+  drawLabelValue("Teléfono",order.phone||"No registrado",55,320,220);
+  drawLabelValue("Dirección de entrega",order.address||"No registrada",320,320,215);
+  page.y=379;
+  const drawProductHeading=()=>{
+   const ctx=page.context;
+   ctx.fillStyle="#273443";ctx.font="700 16px Arial";ctx.fillText("DETALLE DE PRODUCTOS",38,page.y);
+   page.y+=17;roundRect(ctx,38,page.y,519,30,5,"#e7ebef");
+   ctx.fillStyle="#46515e";ctx.font="700 10px Arial";
+   ctx.fillText("PRODUCTO",50,page.y+20);ctx.textAlign="right";
+   ctx.fillText("CANT.",366,page.y+20);ctx.fillText("PRECIO",452,page.y+20);ctx.fillText("IMPORTE",545,page.y+20);
+   ctx.textAlign="left";page.y+=30;
+  };
+  drawProductHeading();
+  order.items.forEach((item,index)=>{
+   context=page.context;context.font="12px Arial";
+   const nameLines=wrapText(context,item.product_name,260),rowHeight=Math.max(38,nameLines.length*15+15);
+   if(page.y+rowHeight>716){page=addPage(true);drawProductHeading()}
+   context=page.context;
+   if(index%2===0)roundRect(context,38,page.y,519,rowHeight,4,"#ffffff");
+   context.fillStyle="#252b33";context.font="12px Arial";
+   nameLines.forEach((line,lineIndex)=>context.fillText(line,50,page.y+21+lineIndex*15));
+   context.textAlign="right";context.fillText(String(Number(item.quantity)),366,page.y+22);
+   context.fillText(money(Number(item.unit_price)),452,page.y+22);
+   context.font="700 12px Arial";context.fillText(money(Number(item.unit_price)*Number(item.quantity)),545,page.y+22);
+   context.textAlign="left";page.y+=rowHeight;
+  });
+  if(page.y+180>760)page=addPage(true);
+  context=page.context;
+  const totalX=286,totalY=page.y+18,totalWidth=271,totalRows=[["Subtotal",money(Number(order.subtotal))]];
+  if(Number(order.discount))totalRows.push(["Descuento",`− ${money(Number(order.discount))}`]);
+  totalRows.push(["Envío",Number(order.shipping_fee)?money(Number(order.shipping_fee)):"Gratis"],["Total del pago",money(Number(order.total))]);
+  const totalHeight=26+totalRows.length*24;
+  roundRect(context,totalX,totalY,totalWidth,totalHeight,8,"#ffffff","#d8dee5");
+  totalRows.forEach(([label,value],index)=>{
+   const y=totalY+23+index*24,isTotal=index===totalRows.length-1;
+   if(isTotal){context.strokeStyle="#d8dee5";context.beginPath();context.moveTo(totalX+14,y-15);context.lineTo(totalX+totalWidth-14,y-15);context.stroke()}
+   context.fillStyle=isTotal?"#202a36":"#687481";context.font=isTotal?"700 14px Arial":"12px Arial";
+   context.fillText(label,totalX+14,y);context.textAlign="right";context.fillText(value,totalX+totalWidth-14,y);context.textAlign="left";
+  });
+  const noteY=totalY+totalHeight+16;
+  roundRect(context,38,noteY,519,57,7,"#fff8e8","#e8d4a8");
+  context.fillStyle="#725513";context.font="700 11px Arial";
+  context.fillText(`METODO DE PAGO: ${String(order.payment_method||"").toUpperCase()}   ·   COMPROBANTE: ${order.has_receipt?"ADJUNTADO":"NO ADJUNTADO"}`,52,noteY+21);
+  context.fillStyle="#6d5d3c";context.font="10px Arial";
+  context.fillText("El pago queda sujeto a revisión manual. Este documento no acredita su aprobación.",52,noteY+40);
+  pages.forEach((entry,index)=>{
+   const ctx=entry.context;
+   ctx.strokeStyle="#d8dee5";ctx.beginPath();ctx.moveTo(38,795);ctx.lineTo(557,795);ctx.stroke();
+   ctx.fillStyle="#687481";ctx.font="10px Arial";ctx.fillText("ZyP TECH S.A.C. · hola@zyptech.pe · +51 921 203 723",38,815);
+   ctx.textAlign="right";ctx.fillText(`PAGINA ${index+1} DE ${pages.length}`,557,815);ctx.textAlign="left";
+  });
+  const objects=[null,"<< /Type /Catalog /Pages 2 0 R >>",null],pageReferences=[];
+  for(let index=0;index<pages.length;index++){
+   const imageObject=3+index*3,pageObject=imageObject+1,contentObject=imageObject+2;
+   pageReferences.push(`${pageObject} 0 R`);
+   const jpegBlob=await new Promise((resolve,reject)=>pages[index].canvas.toBlob(blob=>blob?resolve(blob):reject(new Error("No se pudo preparar la página del PDF.")),"image/jpeg",.94));
+   const jpegBytes=new Uint8Array(await jpegBlob.arrayBuffer()),contentBytes=new TextEncoder().encode("q 595 0 0 842 0 0 cm /Im0 Do Q");
+   objects[imageObject]={dictionary:`<< /Type /XObject /Subtype /Image /Width ${pageWidth*scale} /Height ${pageHeight*scale} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${jpegBytes.length} >>`,stream:jpegBytes};
+   objects[pageObject]=`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${pageWidth} ${pageHeight}] /Resources << /XObject << /Im0 ${imageObject} 0 R >> >> /Contents ${contentObject} 0 R >>`;
+   objects[contentObject]={dictionary:`<< /Length ${contentBytes.length} >>`,stream:contentBytes};
+  }
+  objects[2]=`<< /Type /Pages /Kids [${pageReferences.join(" ")}] /Count ${pages.length} >>`;
+  const encoder=new TextEncoder(),parts=[],offsets=[0];let byteLength=0;
+  const addPart=part=>{parts.push(part);byteLength+=part.length};
+  addPart(encoder.encode("%PDF-1.4\n"));
+  for(let index=1;index<objects.length;index++){
+   offsets[index]=byteLength;
+   const object=objects[index];
+   if(object&&typeof object==="object"&&object.stream instanceof Uint8Array){
+    addPart(encoder.encode(`${index} 0 obj\n${object.dictionary}\nstream\n`));addPart(object.stream);addPart(encoder.encode("\nendstream\nendobj\n"));
+   }else addPart(encoder.encode(`${index} 0 obj\n${object}\nendobj\n`));
+  }
+  const xrefOffset=byteLength;let xref=`xref\n0 ${objects.length}\n0000000000 65535 f \n`;
+  for(let index=1;index<objects.length;index++)xref+=`${String(offsets[index]).padStart(10,"0")} 00000 n \n`;
+  xref+=`trailer\n<< /Size ${objects.length} /Root 1 0 R >>\nstartxref\n${xrefOffset}\n%%EOF`;
+  addPart(encoder.encode(xref));
+  const url=URL.createObjectURL(new Blob(parts,{type:"application/pdf"})),link=document.createElement("a");
+  link.href=url;link.download=`comprobante-pedido-${Number(order.id)}-zyp-tech.pdf`;
+  document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ }catch(error){toast(`No se pudo generar el comprobante PDF: ${error.message}`)}
+}
+function printOrderPdf(orderId){
+const order=findOrderById(orderId);
+if(!order)return toast("No se encontró el pedido para imprimir.");
+const printWindow=window.open("","_blank");
+if(!printWindow)return toast("Permite las ventanas emergentes para imprimir el resumen.");
+ const rows=order.items.map(item=>{
+  const product=productById(item.product_id),imageSource=product?(productImagesFor(product)[0]?.src||product.image):"",image=imageSource?`<img src="${escapeHtml(imageSource)}" alt="Producto">`:"";
+  return `<tr><td>${image}</td><td>${escapeHtml(item.product_name)}</td><td>${Number(item.quantity)}</td><td>${money(Number(item.unit_price))}</td><td>${money(Number(item.unit_price)*Number(item.quantity))}</td></tr>`;
+ }).join("");
+ const proofUrl=new URL(`${API}?action=receipt&id=${Number(order.id)}`,location.href).href;
+ const paymentProof=order.has_receipt?`<section class="proof"><h2>Comprobante de pago adjuntado</h2><img src="${escapeHtml(proofUrl)}" alt="Comprobante de pago del pedido ${Number(order.id)}"></section>`:"<p>Aún no se adjuntó una imagen de pago para este pedido.</p>";
+ const logo=new URL("logo.png",location.href).href;
+ const printable=printWindow.document;
+ printable.open();
+ printable.write(`<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Resumen del pedido ${Number(order.id)}</title><style>
+*{box-sizing:border-box}body{margin:0;padding:24px;color:#252b33;font:14px/1.5 Arial,sans-serif}.page{max-width:800px;margin:auto}.header{display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:2px solid #52677d;padding-bottom:16px}.logo{width:130px;max-height:68px;object-fit:contain}.muted{color:#626b76}.summary{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:20px 0;padding:14px;background:#f2f4f6}.items{width:100%;border-collapse:collapse;margin:18px 0}.items th,.items td{padding:8px;border-bottom:1px solid #d8dee5;text-align:left}.items th:nth-last-child(-n+3),.items td:nth-last-child(-n+3){text-align:right}.items td:first-child{width:58px}.items td img{width:48px;height:48px;object-fit:contain}.totals{width:min(100%,340px);margin-left:auto}.total-row{display:flex;justify-content:space-between;padding:5px 0}.grand{border-top:2px solid #52677d;margin-top:8px;padding-top:10px;font-size:1.1rem;font-weight:bold}.proof{margin-top:28px;border-top:1px solid #d8dee5;padding-top:18px}.proof img{display:block;max-width:100%;max-height:440px;object-fit:contain;margin:10px auto}.notice{margin-top:24px;padding:10px;background:#f2f4f6;color:#626b76;font-size:12px}.actions{display:flex;justify-content:flex-end;gap:10px;margin:0 auto 18px;max-width:800px}.actions button{padding:10px 16px;border:0;background:#52677d;color:white;font:inherit;cursor:pointer}.actions button:last-child{background:#e5e9ee;color:#252b33}@media print{body{padding:0}.actions{display:none}.page{max-width:none}.proof{break-inside:avoid}.items tr{break-inside:avoid}}@page{size:A4;margin:16mm}
+ </style></head><body><div class="actions"><button onclick="window.print()">Imprimir</button><button onclick="window.close()">Cerrar</button></div><main class="page"><header class="header"><img class="logo" src="${escapeHtml(logo)}" alt="ZyP TECH"><div><h1>Resumen del pedido #${Number(order.id)}</h1><strong>${escapeHtml(({pending:"Pendiente de revisión",approved:"Pago aprobado",rejected:"Pago observado",cancelled:"Pedido cancelado"})[order.status]||"Pedido")}</strong></div></header><div class="summary"><div><span class="muted">Cliente</span><br><strong>${escapeHtml(order.customer_name||currentUser.name)}</strong></div><div><span class="muted">Fecha</span><br><strong>${escapeHtml(order.created_at)}</strong></div><div><span class="muted">Método de pago</span><br><strong>${escapeHtml(order.payment_method)}</strong></div><div><span class="muted">Correo</span><br><strong>${escapeHtml(order.customer_email||currentUser.email)}</strong></div><div><span class="muted">Teléfono</span><br><strong>${escapeHtml(order.phone||"No registrado")}</strong></div><div><span class="muted">Dirección de entrega</span><br><strong>${escapeHtml(order.address||"No registrada")}</strong></div></div><h2>Productos del pedido</h2><table class="items"><thead><tr><th>Foto</th><th>Producto</th><th>Cant.</th><th>Precio</th><th>Importe</th></tr></thead><tbody>${rows}</tbody></table><div class="totals"><div class="total-row"><span>Subtotal</span><span>${money(Number(order.subtotal))}</span></div>${Number(order.discount)?`<div class="total-row"><span>Descuento</span><span>− ${money(Number(order.discount))}</span></div>`:""}<div class="total-row"><span>Envío</span><span>${Number(order.shipping_fee)?money(Number(order.shipping_fee)):"Gratis"}</span></div><div class="total-row grand"><span>Total</span><span>${money(Number(order.total))}</span></div></div>${paymentProof}<p class="notice">Este documento es un resumen informativo del pedido y de la imagen de pago adjuntada. No es una boleta de venta ni acredita que el pago haya sido aprobado.</p></main><script>window.addEventListener("load",()=>setTimeout(()=>window.print(),300),{once:true});<\/script></body></html>`);
+ printable.close();
+ printWindow.focus();
+}
+async function showAccountDashboard(){
+ $("#authView").hidden=true;$("#accountView").hidden=false;
+ $("#accountTitle").textContent=currentUser.role==="admin"?"Administración":"Mi cuenta";
+ $("#accountWelcome").textContent=`Hola, ${currentUser.name} (${currentUser.email||currentUser.phone||"sin correo"})`;
+ $("#adminPanel").hidden=currentUser.role!=="admin";$("#customerPanel").hidden=currentUser.role==="admin";
+ $("#accountDialog").classList.toggle("admin-expanded",currentUser.role==="admin");
+ if(currentUser.role==="admin")setAdminView("dashboard");
+ if(trackingRefreshTimer!==null)clearInterval(trackingRefreshTimer);
+ if(currentUser.role==="customer")trackingRefreshTimer=setInterval(async()=>{
+  if(!$("#accountDialog").open||currentUser?.role!=="customer")return;
+  try{await loadAccountOrders();trackingRefreshError=false}
+  catch(error){if(!trackingRefreshError){toast(`No se pudo actualizar el seguimiento: ${error.message}`);trackingRefreshError=true}}
+ },15000);
+ try{await loadAccountOrders()}catch(error){toast(error.message)}
+}
+async function setAdminView(view){
+ const selectedView=["dashboard","orders","products"].includes(view)?view:"dashboard";
+ $("#adminDashboardView").hidden=selectedView!=="dashboard";
+ $("#adminOrdersView").hidden=selectedView!=="orders";
+ $("#adminProductsView").hidden=selectedView!=="products";
+ document.querySelectorAll("[data-admin-view]").forEach(button=>{
+  const selected=button.dataset.adminView===selectedView;
+  button.classList.toggle("selected",selected);button.classList.toggle("icon",!selected);
+ });
+ if(selectedView==="products")await loadAdminProducts();
+}
+async function submitAuth(event,action){
+ event.preventDefault();const form=event.currentTarget,button=form.querySelector('button[type="submit"]');button.disabled=true;$("#authMessage").textContent="";
+ try{const result=await apiRequest(action,{method:"POST",form:new FormData(form)});csrfToken=result.csrf;
+  await finishAuth(result,form,action);
+ }catch(error){$("#authMessage").textContent=error.message}
+ finally{button.disabled=false}
+}
+async function showAuthSuccess(action){
+ const dialog=$("#authSuccessDialog"),check=dialog.querySelector(".success-check");
+ $("#authSuccessTitle").textContent=action==="register"?"¡Registro exitoso!":"Ingreso exitoso";
+ $("#authSuccessMessage").textContent=action==="register"?"Cuenta creada e ingresada correctamente.":"Cuenta ingresada correctamente.";
+ check.classList.remove("animate");void check.offsetWidth;check.classList.add("animate");
+ dialog.showModal();
+ return new Promise(resolve=>{
+  let completed=false;
+  const finish=()=>{
+   if(completed)return;
+   completed=true;clearTimeout(timer);
+   dialog.removeEventListener("close",finish);
+   resolve();
+  };
+  const timer=setTimeout(()=>{if(dialog.open)dialog.close();finish()},1800);
+  dialog.addEventListener("close",finish,{once:true});
+  $("#continueAfterAuth").onclick=()=>dialog.close();
+ });
+}
+async function finishAuth(result,form,action){
+ csrfToken=result.csrf;currentUser=result.user;updateAccountButton();form.reset();
+ await showAuthSuccess(action);
+ await showAccountDashboard();
+ if(pendingOrderToResume!==null){const orderId=pendingOrderToResume;pendingOrderToResume=null;checkoutAfterLogin=false;$("#accountDialog").close();await resumePendingOrder(orderId)}
+ else if(checkoutAfterLogin){checkoutAfterLogin=false;$("#accountDialog").close();await loadUbigeos();beginCheckout()}
+}
+function beginCheckout(order=null){
+ const form=$("#checkoutForm");
+ if(!order)form.reset();
+ if(!order&&currentUser?.phone)form.elements.phone.value=currentUser.phone;
+ $("#checkoutDepartment").value=order?.department_code||"";
+ updateLocationOptions();
+ if(order){$("#checkoutProvince").value=order.province_code;updateLocationOptions();$("#checkoutDistrict").value=order.district_code}
+ const subtotal=order?Number(order.subtotal):Math.round(Object.keys(cart).reduce((sum,i)=>sum+productById(i).p*cart[i],0)*100)/100,pricing=calculatePricing(subtotal,order);
+ $("#checkoutSubtotal").textContent=money(pricing.subtotal);$("#checkoutDiscountLine").hidden=pricing.discount===0;$("#checkoutDiscount").textContent=`− ${money(pricing.discount)}`;
+ $("#checkoutShipping").textContent=pricing.shipping?money(pricing.shipping):"Gratis";$("#checkoutTotal").textContent=money(pricing.total);
+ updatingOrderId=order?Number(order.id):null;$("#submitOrder").textContent=updatingOrderId?"Actualizar comprobante":"Finalizar pedido";
+ $("#checkoutMessage").textContent="";$("#checkoutDetails").hidden=false;$("#paymentStep").hidden=true;$("#checkoutDialog").showModal();
+}
+function showPaymentInstructions(method){
+ const transfer=method==="transfer",qr=$("#paymentQr");
+ $("#transferInstructions").hidden=!transfer;$("#qrInstructions").hidden=true;$("#qrUnavailable").hidden=true;
+ $("#receiptSection").hidden=false;$("#submitOrder").disabled=false;
+ if(transfer){
+  $("#paymentTitle").textContent="Transfiere a tu cuenta BCP";
+  $("#paymentHelp").textContent="Realiza la transferencia por el total indicado y adjunta la captura del comprobante.";
+  return;
+ }
+ const methodName=method==="yape"?"Yape":"Plin",qrPath=method==="yape"?"yape_qr.jpeg":"plinqr.jpeg";
+ $("#paymentTitle").textContent=`Paga con ${methodName}`;
+ $("#paymentHelp").textContent=`Escanea el QR de ${methodName}, paga el total indicado y adjunta la captura del comprobante.`;
+ qr.alt=`QR de pago de ${methodName}`;
+ qr.onload=()=>{$("#qrInstructions").hidden=false;$("#qrUnavailable").hidden=true;$("#receiptSection").hidden=false;$("#submitOrder").disabled=false};
+ qr.onerror=()=>{$("#qrInstructions").hidden=true;$("#qrUnavailable").textContent=`Aún falta configurar el QR real de ${methodName}. La tienda debe agregar el archivo ${qrPath} para recibir pagos por este método.`;$("#qrUnavailable").hidden=false;$("#receiptSection").hidden=true;$("#submitOrder").disabled=true};
+ qr.src=qrPath;
+}
+async function resumePendingOrder(orderId){
+ try{
+  await refreshSession();
+  if(!currentUser){pendingOrderToResume=Number(orderId);await requestCheckoutLogin("Inicia sesión para continuar con este pedido pendiente.");return}
+  const result=await apiRequest("resume_order",{query:{id:orderId}}),order=result.order;
+  const form=$("#checkoutForm"),method=form.elements.payment;
+  cart={};order.items.forEach(item=>{cart[item.product_id]=Number(item.quantity)});draw();
+  form.elements.phone.value=order.phone;form.elements.address.value=order.address;method.value=order.payment_code;
+  await loadUbigeos();beginCheckout(order);
+  if(order.department_code&&order.province_code&&order.district_code){
+   form.elements.department.value=order.department_code;updateLocationOptions();form.elements.province.value=order.province_code;updateLocationOptions();form.elements.district.value=order.district_code;
+   showPaymentInstructions(order.payment_code);$("#checkoutDetails").hidden=true;$("#paymentStep").hidden=false;
+  }else{
+   $("#checkoutMessage").textContent="Selecciona el departamento, provincia y distrito de entrega para continuar con este pedido.";
+  }
+ }catch(error){
+  if(error.status===401||error.status===419){pendingOrderToResume=Number(orderId);await requestCheckoutLogin("Tu sesión venció. Inicia sesión para continuar con este pedido.");return}
+  toast(error.message);
+ }
+}
+$("#cats").innerHTML=CATS.map(c=>`<button class="cat" data-c="${c[0]}"><i>${c[1]}</i>${c[0]}</button>`).join("");
+$("#cat").innerHTML='<option value="">Todas las categorías</option>'+CATS.map(c=>`<option>${c[0]}</option>`).join("");
+const visibleProductCards=new Set();
+let productGalleryObserver=null,productGalleryTimer=null;
+function setProductCardImage(card,index){
+ const gallery=card.querySelector(".product-gallery"),product=P[Number(gallery.dataset.productIndex)],images=productImagesFor(product);
+ if(images.length<2)return;
+ const next=(index+images.length)%images.length,image=gallery.querySelector(".img img");
+ gallery.dataset.imageIndex=String(next);
+ image.src=images[next].src;image.alt=images[next].alt;
+ gallery.querySelectorAll(".gallery-thumbnail").forEach((thumbnail,thumbnailIndex)=>{
+  const selected=thumbnailIndex===next;
+  thumbnail.classList.toggle("selected",selected);thumbnail.setAttribute("aria-pressed",String(selected));
+ });
+ const counter=gallery.querySelector(".gallery-count");
+ if(counter)counter.textContent=`${next+1} / ${images.length}`;
+}
+function updateProductGalleryRotation(){
+ if(document.hidden||matchMedia("(prefers-reduced-motion: reduce)").matches){
+  if(productGalleryTimer!==null){clearInterval(productGalleryTimer);productGalleryTimer=null}
+  return;
+ }
+ if(productGalleryTimer!==null)return;
+ productGalleryTimer=setInterval(()=>{
+  visibleProductCards.forEach(card=>{
+   if(!card.isConnected){visibleProductCards.delete(card);return}
+   const gallery=card.querySelector(".product-gallery");
+   if(!gallery)return;
+   setProductCardImage(card,Number(gallery.dataset.imageIndex||0)+1);
+  });
+ },3600);
+}
+function observeProductCards(){
+ if(productGalleryObserver)productGalleryObserver.disconnect();
+ visibleProductCards.clear();
+ const cards=document.querySelectorAll("#grid .p");
+ if("IntersectionObserver" in window){
+  productGalleryObserver=new IntersectionObserver(entries=>{
+   entries.forEach(entry=>{
+    if(entry.isIntersecting)visibleProductCards.add(entry.target);
+    else visibleProductCards.delete(entry.target);
+   });
+   updateProductGalleryRotation();
+  },{threshold:.35});
+  cards.forEach(card=>productGalleryObserver.observe(card));
+ }else{
+  cards.forEach(card=>visibleProductCards.add(card));
+  updateProductGalleryRotation();
+ }
+}
+document.addEventListener("visibilitychange",updateProductGalleryRotation);
+function render(){
+ const q=$("#q").value.toLowerCase(),c=$("#cat").value,s=$("#sort").value;
+ let l=P.map((x,index)=>({...x,i:Number(x.id??index),arrayIndex:index})).filter(x=>(!c||x.c===c)&&(x.n+x.d+x.f.join(" ")).toLowerCase().includes(q));
+ if(s)l.sort((a,b)=>s==="a"?a.p-b.p:b.p-a.p);
+ $("#empty").hidden=l.length>0;
+ $("#grid").innerHTML=l.map(x=>{
+  const images=productImagesFor(x),hasViews=images.length>1,admin=currentUser?.role==="admin",offer=x.offerPrice!==null&&x.offerPrice!==undefined&&x.offerPrice<x.regularPrice,productTag=offer?(x.offerLabel||"Oferta"):x.t;
+  const price=offer?`<b>${money(x.p)}</b><s>${money(x.regularPrice)}</s>`:`<b>${money(x.p)}</b>${x.o?`<s>${money(x.o)}</s>`:""}`;
+  return `<article class="p" tabindex="0" data-open-product="${x.i}" aria-label="Ver detalles de ${escapeHtml(x.n)}">${productTag?`<span class="tag">${escapeHtml(productTag)}</span>`:""}<div class="product-gallery${hasViews?" has-views":""}" data-product-index="${x.arrayIndex}" data-image-index="0"><div class="img"><img src="${escapeHtml(images[0].src)}" alt="${escapeHtml(images[0].alt)}" loading="lazy" decoding="async">${hasViews?`<span class="gallery-count" aria-live="polite">1 / ${images.length}</span><button class="gallery-arrow gallery-previous" data-gallery-step="-1" data-product-index="${x.arrayIndex}" aria-label="Ver imagen anterior de ${escapeHtml(x.n)}">‹</button><button class="gallery-arrow gallery-next" data-gallery-step="1" data-product-index="${x.arrayIndex}" aria-label="Ver imagen siguiente de ${escapeHtml(x.n)}">›</button>`:""}</div>${hasViews?`<div class="gallery-thumbnails" aria-label="Imágenes de ${escapeHtml(x.n)}">${images.map((image,index)=>`<button class="gallery-thumbnail${index===0?" selected":""}" data-gallery-index="${index}" data-product-index="${x.arrayIndex}" aria-label="${escapeHtml(image.alt)}" aria-pressed="${index===0}"><img src="${escapeHtml(image.src)}" alt="" loading="lazy" decoding="async"></button>`).join("")}</div>`:""}</div><h3>${escapeHtml(x.n)}</h3><p class="product-summary">${escapeHtml(x.d)}</p><details class="product-details"><summary>Ver todas las características</summary><ul>${x.f.map(feature=>`<li>${escapeHtml(feature)}</li>`).join("")}</ul></details><p class="product-stock${Number(x.stock)===0?" out-of-stock":""}">${Number(x.stock)>0?`Disponibles: ${Number(x.stock)} unidades`:"Agotado"}</p><div class="price">${price}</div>${admin?`<button data-edit-product="${x.i}">Modificar</button>`:`<button data-add="${x.i}"${Number(x.stock)===0?" disabled":""}>${Number(x.stock)>0?"Lo quiero":"Agotado"}</button>`}</article>`;
+ }).join("");
+ observeProductCards();
+}
+["input","change"].forEach(e=>{$("#q").addEventListener(e,render);$("#cat").addEventListener(e,render);$("#sort").addEventListener(e,render)});
+document.addEventListener("click",async e=>{
+ const a=e.target.closest("[data-add]"),editProduct=e.target.closest("[data-edit-product]"),k=e.target.closest("[data-c]"),m=e.target.closest("[data-q]"),r=e.target.closest("[data-resume-order]");
+ const detailAction=e.target.closest("[data-detail-action]");
+ if(detailAction){
+  const productId=Number(detailAction.dataset.productId);
+  if(detailAction.dataset.detailAction==="edit"){
+   $("#productDetailDialog").close();
+   e.target.closest("[data-detail-action]").removeAttribute("data-detail-action");
+   const productButton=document.querySelector(`[data-edit-product="${productId}"]`);
+   if(productButton)productButton.click();
+   else toast("No se encontró el producto para modificar.");
+  }else{
+   addProductToCart(productId);
+   $("#productDetailDialog").close();
+  }
+  return;
+ }
+ const detailGalleryControl=e.target.closest("[data-detail-step],[data-detail-image]");
+ if(detailGalleryControl){
+  const gallery=$("#productDetailGallery"),product=P[Number(gallery.dataset.productIndex)],images=productImagesFor(product),current=Number(gallery.querySelector(".gallery-thumbnail.selected")?.dataset.detailImage||0),requested=detailGalleryControl.dataset.detailStep===undefined?Number(detailGalleryControl.dataset.detailImage):current+Number(detailGalleryControl.dataset.detailStep),next=(requested+images.length)%images.length;
+  $("#productDetailImage").src=images[next].src;$("#productDetailImage").alt=images[next].alt;
+  gallery.querySelectorAll("[data-detail-image]").forEach((thumbnail,imageIndex)=>{const selected=imageIndex===next;thumbnail.classList.toggle("selected",selected);thumbnail.setAttribute("aria-pressed",String(selected))});
+  return;
+ }
+ const productCard=e.target.closest("[data-open-product]");
+ if(productCard&&!e.target.closest("button,a,input,select,textarea,summary,.product-details")){
+  showProductDetails(Number(productCard.dataset.openProduct));return;
+ }
+ if(editProduct){
+  try{
+   if(currentUser?.role!=="admin")return toast("Inicia sesión como administrador para modificar productos.");
+   if(!$("#accountDialog").open)await openAccount(false);
+   await setAdminView("products");
+   const editor=document.querySelector(`[data-product-edit="${Number(editProduct.dataset.editProduct)}"]`);
+   if(!editor)return toast("No se encontró el formulario de este producto.");
+   editor.scrollIntoView({behavior:"smooth",block:"center"});
+   editor.querySelector('[name="name"]').focus({preventScroll:true});
+  }catch(error){toast(error.message)}
+  return;
+ }
+ const orderPrint=e.target.closest("[data-print-order]");
+ if(orderPrint){printOrderPdf(Number(orderPrint.dataset.printOrder));return}
+ const orderDownload=e.target.closest("[data-download-order]");
+ if(orderDownload){downloadOrderPdf(Number(orderDownload.dataset.downloadOrder));return}
+ const galleryControl=e.target.closest("[data-gallery-step],[data-gallery-index]");
+ if(galleryControl){
+  const card=galleryControl.closest(".p"),gallery=card.querySelector(".product-gallery"),product=P[Number(gallery.dataset.productIndex)],images=productImagesFor(product),current=Number(gallery.dataset.imageIndex||0),requested=galleryControl.dataset.galleryStep===undefined?Number(galleryControl.dataset.galleryIndex):current+Number(galleryControl.dataset.galleryStep);
+  setProductCardImage(card,requested);
+  return;
+ }
+ if(r){await resumePendingOrder(Number(r.dataset.resumeOrder));return}
+ if(a){addProductToCart(a.dataset.add)}
+ if(k){$("#cat").value=k.dataset.c;render();$("#tienda").scrollIntoView()}
+ if(m){
+  const i=m.dataset.i,product=productById(i),next=Number(cart[i]||0)+Number(m.dataset.q);
+  if(next>0&&product&&next>Number(product.stock||0))return toast(`Solo quedan ${Number(product.stock)} unidades disponibles de ${product.n}.`);
+  if(next<=0)delete cart[i];else cart[i]=next;
+  draw();
+ }
+});
+document.addEventListener("keydown",e=>{
+ if((e.key==="Enter"||e.key===" ")&&e.target.matches("[data-open-product]")){
+  e.preventDefault();showProductDetails(Number(e.target.dataset.openProduct));
+ }
+});
+function draw(){
+ const ks=Object.keys(cart);let t=0,n=0;
+ $("#items").innerHTML=ks.length?ks.map(i=>{const x=productById(i),q=cart[i];t=Math.round((t+x.p*q)*100)/100;n+=q;return `<div class="it"><span>${x.e}</span><span>${escapeHtml(x.n)}<br><small>${money(x.p)}</small></span><button class="icon" data-i="${i}" data-q="-1" aria-label="Quitar uno">−</button><span class="q">${q}</span><button class="icon" data-i="${i}" data-q="1" aria-label="Agregar uno">+</button></div>`}).join(""):'<p class="sub">Tu carrito está vacío. Agrega productos desde la tienda.</p>';
+ const pricing=calculatePricing(t),pricingBox=$("#cartPricing");
+ pricingBox.hidden=ks.length===0;
+ pricingBox.innerHTML=ks.length?`<div><span>Subtotal</span><span>${money(pricing.subtotal)}</span></div>${pricing.discount?`<div class="cart-discount"><span>Descuento 30%</span><span>− ${money(pricing.discount)}</span></div>`:""}<div><span>Envío</span><span>${pricing.shipping?money(pricing.shipping):"Gratis"}</span></div>`:"";
+ $("#total").textContent=money(pricing.total);$("#count").textContent=n;
+}
+$("#cartBtn").onclick=()=>$("#drawer").classList.add("open");
+$("#close").onclick=()=>$("#drawer").classList.remove("open");
+$("#buy").onclick=async()=>{
+ if(!Object.keys(cart).length)return toast("Agrega productos primero");
+ try{await refreshSession();if(!currentUser){await requestCheckoutLogin("Inicia sesión o crea una cuenta para continuar con tu pedido.");return}await loadUbigeos();await loadCatalog();render();draw();const stockIssue=cartStockIssue();if(stockIssue)return toast(`El stock disponible de ${stockIssue.n} no alcanza la cantidad del carrito. Ajusta el carrito para continuar.`);beginCheckout()}
+ catch(error){toast(error.message)}
+};
+$("#checkoutDepartment").onchange=()=>updateLocationOptions();
+$("#checkoutProvince").onchange=()=>updateLocationOptions();
+$("#cancelCheckout").onclick=()=>$("#checkoutDialog").close();
+$("#nextPayment").onclick=()=>{
+ const form=$("#checkoutForm");
+ if(!form.elements.phone.reportValidity()||!form.elements.address.reportValidity()||!form.elements.department.reportValidity()||!form.elements.province.reportValidity()||!form.elements.district.reportValidity()||!form.elements.payment.reportValidity())return;
+ showPaymentInstructions(form.elements.payment.value);$("#checkoutMessage").textContent="";$("#checkoutDetails").hidden=true;$("#paymentStep").hidden=false;
+};
+$("#backPayment").onclick=()=>{$("#paymentStep").hidden=true;$("#checkoutDetails").hidden=false};
+$("#checkoutForm").onsubmit=async e=>{
+ e.preventDefault();const form=e.currentTarget,button=form.querySelector('button[type="submit"]');button.disabled=true;$("#checkoutMessage").textContent="";
+ const data=new FormData(form);data.set("items",JSON.stringify(cart));
+ try{
+  const updating=updatingOrderId!==null;if(updating)data.set("orderId",updatingOrderId);
+  const result=await apiRequest(updating?"update_receipt":"order",{method:"POST",form:data});
+  cart={};draw();$("#checkoutDialog").close();$("#drawer").classList.remove("open");form.reset();$("#checkoutDetails").hidden=false;$("#paymentStep").hidden=true;updatingOrderId=null;
+   try{await loadCatalog()}
+   catch(loadError){toast(`El pedido se registró, pero no se pudo actualizar el stock mostrado: ${loadError.message}`)}
+  if(updating){
+   await showPaymentSuccess(true);
+   if(currentUser)await loadAccountOrders();
+  }else{
+   await showPaymentSuccess();
+   if(currentUser){
+    try{await loadAccountOrders();showOrderConfirmation(result.orderId)}
+    catch(loadError){toast(`El pedido se registró, pero no se pudo cargar el resumen: ${loadError.message}`)}
+   }
+  }
+ }catch(error){if(error.status===401||error.status===419){if(updatingOrderId!==null){pendingOrderToResume=updatingOrderId;updatingOrderId=null}await requestCheckoutLogin("Tu sesión venció. Inicia sesión para continuar con el pedido.");return}$("#checkoutMessage").textContent=error.message}
+ finally{button.disabled=false}
+};
+$("#accountBtn").onclick=openAccount;
+$("#customerCommentLoginButton").onclick=()=>openAccount();
+$("#customerCommentForm").onsubmit=async event=>{
+ event.preventDefault();
+ const form=event.currentTarget,button=form.querySelector('button[type="submit"]'),status=$("#customerCommentsStatus");
+ button.disabled=true;status.classList.remove("comment-error");status.textContent="";
+ try{
+  const result=await apiRequest("comment",{method:"POST",form:new FormData(form)});
+  form.reset();await loadCustomerComments();status.textContent=result.message;
+ }catch(error){status.classList.add("comment-error");status.textContent=error.message}
+ finally{button.disabled=false}
+};
+$("#refreshCustomerOrders").onclick=async()=>{
+ const button=$("#refreshCustomerOrders");button.disabled=true;
+ try{await loadAccountOrders();trackingRefreshError=false}
+ catch(error){toast(`No se pudo actualizar el seguimiento: ${error.message}`)}
+ finally{button.disabled=false}
+};
+$("#accountDialog").addEventListener("close",()=>{if(trackingRefreshTimer!==null){clearInterval(trackingRefreshTimer);trackingRefreshTimer=null}});
+const closeOrderConfirmation=()=>$("#orderConfirmationDialog").close();
+$("#closeOrderConfirmation").onclick=closeOrderConfirmation;
+$("#closeOrderConfirmationFooter").onclick=closeOrderConfirmation;
+$("#downloadOrderConfirmationPdf").onclick=event=>downloadOrderPdf(Number(event.currentTarget.dataset.downloadOrder));
+$("#printOrderConfirmation").onclick=event=>printOrderPdf(Number(event.currentTarget.dataset.printOrder));
+$("#openHelpChat").onclick=()=>setHelpChatOpen($("#helpChat").hidden);
+$("#closeHelpChat").onclick=()=>setHelpChatOpen(false);
+$("#helpChatForm").onsubmit=e=>{
+ e.preventDefault();
+ const input=$("#helpChatInput"),question=input.value;
+ answerHelpChat(question);
+ input.value="";
+ input.focus();
+};
+$("#helpChatSuggestions").onclick=e=>{
+ const button=e.target.closest("[data-chat-question]");
+ if(!button)return;
+ answerHelpChat(button.dataset.chatQuestion);
+};
+document.addEventListener("keydown",e=>{
+ if(e.key==="Escape"&&!$("#helpChat").hidden)setHelpChatOpen(false);
+});
+$("#closeAccount").onclick=()=>{$("#accountDialog").close();checkoutAfterLogin=false;pendingOrderToResume=null};
+$("#closeProductDetail").onclick=()=>$("#productDetailDialog").close();
+$("#productDetailDialog").addEventListener("close",()=>{$("#productVideoPlayer").replaceChildren();$("#productVideoPlayer").hidden=true;$("#productVideoPreview").hidden=false});
+$("#productDetailDialog").addEventListener("click",e=>{if(e.target===$("#productDetailDialog"))$("#productDetailDialog").close()});
+$("#openRegisterForm").onclick=()=>setAuthMode("register");
+$("#backToLogin").onclick=()=>setAuthMode("login");
+document.querySelectorAll("[data-admin-view]").forEach(button=>button.onclick=()=>setAdminView(button.dataset.adminView).catch(error=>toast(error.message)));
+$("#loginForm").onsubmit=e=>submitAuth(e,"login");
+$("#registerForm").onsubmit=e=>submitAuth(e,"register");
+$("#newProductForm").onsubmit=async e=>{
+ e.preventDefault();const form=e.currentTarget,button=form.querySelector('button[type="submit"]');
+ button.disabled=true;$("#newProductMessage").textContent="";
+ try{
+  const result=await apiRequest("create_product",{method:"POST",form:new FormData(form)});
+  form.reset();await loadCatalog();await loadAdminProducts();showAdminSuccess(form);
+ }catch(error){$("#newProductMessage").textContent=error.message}
+ finally{button.disabled=false}
+};
+$("#logoutBtn").onclick=async()=>{
+ try{const data=new FormData();await apiRequest("logout",{method:"POST",form:data});currentUser=null;updateAccountButton();$("#accountDialog").close();toast("Sesión cerrada")}
+ catch(error){toast(error.message)}
+};
+document.addEventListener("click",async e=>{
+ const cancel=e.target.closest("[data-cancel-order]"),review=e.target.closest("[data-review]"),button=cancel||review;if(!button)return;
+ button.disabled=true;const data=new FormData();data.set("orderId",cancel?cancel.dataset.cancelOrder:review.dataset.order);
+ if(review)data.set("status",review.dataset.review);
+ try{
+  await apiRequest(cancel?"cancel_order":"review",{method:"POST",form:data});
+  await loadAccountOrders();await loadCatalog();
+  const order=document.querySelector(`#adminOrdersView [data-order-id="${Number(data.get("orderId"))}"]`);
+  if(order)showAdminSuccess(order);
+ }
+ catch(error){button.disabled=false;toast(error.message)}
+});
+document.addEventListener("submit",async e=>{
+ const trackingForm=e.target.closest("[data-tracking-update]");
+ if(trackingForm){
+  e.preventDefault();const button=trackingForm.querySelector('button[type="submit"]');button.disabled=true;
+  const data=new FormData(trackingForm);data.set("orderId",trackingForm.dataset.trackingUpdate);
+  try{
+   await apiRequest("update_tracking",{method:"POST",form:data});
+   await loadAccountOrders();
+   const order=document.querySelector(`#adminOrdersView [data-order-id="${Number(data.get("orderId"))}"]`);
+   if(order)showAdminSuccess(order);
+  }
+  catch(error){button.disabled=false;toast(error.message)}
+  return;
+ }
+ const form=e.target.closest("[data-product-edit]");
+ if(!form)return;
+ e.preventDefault();const button=form.querySelector('button[type="submit"]');button.disabled=true;
+ const data=new FormData(form),productId=Number(form.dataset.productEdit);data.set("productId",String(productId));
+ try{
+  await apiRequest("update_product",{method:"POST",form:data});
+  await loadCatalog();await loadAdminProducts();
+  const updatedForm=document.querySelector(`#adminProductList [data-product-edit="${productId}"]`);
+  if(updatedForm)showAdminSuccess(updatedForm);
+ }catch(error){button.disabled=false;toast(error.message)}
+});
+document.addEventListener("change",e=>{
+ const select=e.target.closest(".tracking-update select[name='status']");
+ if(!select)return;
+ const form=select.closest(".tracking-update"),delivery=form.querySelector("[data-tracking-code]"),detail=form.querySelector("[data-tracking-detail]");
+ delivery.hidden=select.value!=="entregado";delivery.querySelector("input").required=select.value==="entregado";
+ detail.hidden=select.value!=="incidencia";detail.querySelector("input").required=select.value==="incidencia";
+});
+refreshSession().then(async()=>{
+ try{await loadCustomerComments()}
+ catch(error){$("#customerCommentsStatus").classList.add("comment-error");$("#customerCommentsStatus").textContent=`No se pudieron cargar los comentarios: ${error.message}`}
+}).catch(error=>toast(`No se pudo verificar la sesión: ${error.message}`));
+$("#menu").onclick=()=>$("#nav").classList.toggle("open");
+$("#nav").onclick=()=>$("#nav").classList.remove("open");
+$("#theme").onclick=()=>{const r=document.documentElement,d=matchMedia("(prefers-color-scheme:dark)").matches,cur=r.dataset.theme||(d?"dark":"light");r.dataset.theme=cur==="dark"?"light":"dark"};
+$("#news").onsubmit=e=>{e.preventDefault();$("#nok").textContent="¡Listo! Ya estás suscrito.";e.target.reset()};
+$("#contact").onsubmit=e=>{e.preventDefault();$("#cok").textContent="Mensaje enviado. Te respondemos pronto.";e.target.reset()};
+const end=Date.now()+5*864e5+3*36e5;
+function tick(){let r=Math.max(0,end-Date.now());const f=(v,id)=>$(id).textContent=String(v).padStart(2,"0");f(Math.floor(r/864e5),"#d");f(Math.floor(r/36e5)%24,"#h");f(Math.floor(r/6e4)%60,"#m");f(Math.floor(r/1e3)%60,"#s")}
+tick();setInterval(tick,1000);
+loadCatalog().then(()=>{render();draw()}).catch(error=>{render();draw();toast(error.message)});
+</script>
+</body>
+</html>
+ 
